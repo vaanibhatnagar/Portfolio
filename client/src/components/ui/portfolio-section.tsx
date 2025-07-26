@@ -60,14 +60,13 @@ export default function PortfolioSection() {
 
   const filters = [
     { id: "all", label: "All Projects" },
-    { id: "design", label: "Design" },
+    { id: "ux", label: "UX Design" },
     { id: "engineering", label: "Engineering" },
+    { id: "product", label: "Product Design" },
   ];
 
   const filteredProjects = activeFilter === "all" 
     ? projects 
-    : activeFilter === "design"
-    ? projects.filter(project => project.category === "ux" || project.category === "product")
     : projects.filter(project => project.category === activeFilter);
 
   const getTagColor = (tag: string) => {
@@ -96,43 +95,28 @@ export default function PortfolioSection() {
             A collection of projects spanning both my engineering and design expertise.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            {filters.map((filter) => {
-              const projectCount = filter.id === "all" 
-                ? projects.length 
-                : filter.id === "design"
-                ? projects.filter(p => p.category === "ux" || p.category === "product").length
-                : projects.filter(p => p.category === filter.id).length;
-              
-              return (
-                <button
-                  key={filter.id}
-                  onClick={() => setActiveFilter(filter.id)}
-                  className={`px-6 py-3 font-medium rounded-lg transition-all duration-200 ${
-                    activeFilter === filter.id
-                      ? "bg-primary text-white shadow-lg transform scale-105"
-                      : "bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white hover:shadow-md border border-slate-200 dark:border-slate-600"
-                  }`}
-                >
-                  <span>{filter.label}</span>
-                  <span className={`ml-2 text-xs px-2 py-1 rounded-full ${
-                    activeFilter === filter.id 
-                      ? "bg-white/20" 
-                      : "bg-slate-100 dark:bg-slate-600 text-slate-500 dark:text-slate-400"
-                  }`}>
-                    {projectCount}
-                  </span>
-                </button>
-              );
-            })}
+            {filters.map((filter) => (
+              <Button
+                key={filter.id}
+                variant={activeFilter === filter.id ? "default" : "outline"}
+                onClick={() => setActiveFilter(filter.id)}
+                className={`px-6 py-2 font-medium transition-colors ${
+                  activeFilter === filter.id
+                    ? "bg-primary text-white"
+                    : "text-slate-600 hover:text-primary"
+                }`}
+              >
+                {filter.label}
+              </Button>
+            ))}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <img
                 src={project.imageUrl}
