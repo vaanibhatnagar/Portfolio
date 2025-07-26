@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, Calendar, Linkedin, Github } from "lucide-react";
-import { SiDribbble, SiX } from "react-icons/si";
+import { SiDribbble } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -111,19 +111,14 @@ export default function ContactSection() {
       bgColor: "bg-blue-600 hover:bg-blue-700",
     },
     {
-      icon: SiDribbble,
-      href: "https://dribbble.com",
-      bgColor: "bg-pink-500 hover:bg-pink-600",
-    },
-    {
       icon: Github,
       href: "https://github.com",
       bgColor: "bg-gray-800 hover:bg-gray-900",
     },
     {
-      icon: SiX,
-      href: "https://x.com",
-      bgColor: "bg-slate-800 hover:bg-slate-900",
+      icon: SiDribbble,
+      href: "https://dribbble.com",
+      bgColor: "bg-pink-500 hover:bg-pink-600",
     },
   ];
 
