@@ -120,7 +120,7 @@ export default function AboutSection() {
             <div className="bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 p-6 rounded-xl text-center border border-violet-200 dark:border-violet-800">
               <div className="text-4xl mb-3">🎉</div>
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Event Planner</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-300">Creating personalized themes and memorable experiences that keep people engaged and connected</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">I love creating personalized themes and memorable experiences that keep people engaged and connected</p>
             </div>
           </div>
         </div>
