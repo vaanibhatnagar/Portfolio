@@ -105,7 +105,7 @@ export default function AboutSection() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 p-6 rounded-xl text-center border border-purple-200 dark:border-purple-800">
               <div className="text-4xl mb-3">💃</div>
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Dance Lover</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-300">Whether it's celebrating a project win or performing at a recital, movement is my language of joy</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">Whether it's celebrating a project win or performing at a recital, dancing is my favorite form of expression</p>
             </div>
             <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 p-6 rounded-xl text-center border border-amber-200 dark:border-amber-800">
               <div className="text-4xl mb-3">📚</div>
