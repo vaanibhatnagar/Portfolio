@@ -96,7 +96,7 @@ export default function AboutSection() {
         {/* Personality Section */}
         <div className="mt-20">
           <h3 className="text-2xl font-bold font-display gradient-text text-center mb-12">Beyond the Code</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-pink-50 to-red-50 dark:from-pink-900/20 dark:to-red-900/20 p-6 rounded-xl text-center border border-pink-200 dark:border-pink-800">
               <div className="text-4xl mb-3">🎬</div>
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Movie Enthusiast</h4>
@@ -112,11 +112,7 @@ export default function AboutSection() {
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Book Lover</h4>
               <p className="text-sm text-slate-600 dark:text-slate-300">Every great story teaches us something new so I find inspiration in books that expand my perspective and creativity</p>
             </div>
-            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl text-center border border-emerald-200 dark:border-emerald-800">
-              <div className="text-4xl mb-3">🤝</div>
-              <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Team Cheerleader</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-300">Your biggest supporter, celebrating every milestone and turning setbacks into comebacks</p>
-            </div>
+
             <div className="bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-900/20 dark:to-purple-900/20 p-6 rounded-xl text-center border border-violet-200 dark:border-violet-800">
               <div className="text-4xl mb-3">🎉</div>
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Event Planner</h4>
