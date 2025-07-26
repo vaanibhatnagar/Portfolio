@@ -149,17 +149,8 @@ export default function ResumeSection() {
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
               <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill, index) => (
-                  <div key={index} className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-slate-700 dark:text-slate-300">{skill.name}</span>
-                      <span className="text-sm text-slate-500 dark:text-slate-400">{skill.percentage}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                      <div
-                        className={`h-2 rounded-full ${getSkillColor(skill.category)}`}
-                        style={{ width: `${skill.percentage}%` }}
-                      ></div>
-                    </div>
+                  <div key={index} className="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg">
+                    <span className="text-slate-700 dark:text-slate-300 font-medium">{skill.name}</span>
                   </div>
                 ))}
               </div>

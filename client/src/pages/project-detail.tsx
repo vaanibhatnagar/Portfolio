@@ -241,9 +241,9 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
+      <div className="min-h-screen bg-white dark:bg-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-900 mb-4">Project Not Found</h1>
+          <h1 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Project Not Found</h1>
           <Link href="/">
             <Button>
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -282,9 +282,9 @@ export default function ProjectDetail() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-slate-900">
       {/* Header */}
-      <header className="bg-slate-50 border-b">
+      <header className="bg-slate-50 dark:bg-slate-800 border-b dark:border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link href="/">
             <Button variant="ghost" className="mb-4">
@@ -297,8 +297,8 @@ export default function ProjectDetail() {
               {getCategoryLabel(project.category)}
             </span>
           </div>
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">{project.title}</h1>
-          <p className="text-xl text-slate-600">{project.subtitle}</p>
+          <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-300">{project.subtitle}</p>
         </div>
       </header>
 
@@ -315,31 +315,31 @@ export default function ProjectDetail() {
         {/* Project Info */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Project Overview</h2>
-            <p className="text-slate-700 text-lg leading-relaxed">{project.overview}</p>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Project Overview</h2>
+            <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">{project.overview}</p>
           </div>
-          <div className="bg-slate-50 p-6 rounded-xl">
-            <h3 className="font-bold text-slate-900 mb-4">Project Details</h3>
+          <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl">
+            <h3 className="font-bold text-slate-900 dark:text-white mb-4">Project Details</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Calendar className="h-5 w-5 text-slate-500 mr-3" />
+                <Calendar className="h-5 w-5 text-slate-500 dark:text-slate-400 mr-3" />
                 <div>
-                  <div className="text-sm text-slate-500">Duration</div>
-                  <div className="font-medium text-slate-900">{project.duration}</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400">Duration</div>
+                  <div className="font-medium text-slate-900 dark:text-white">{project.duration}</div>
                 </div>
               </div>
               <div className="flex items-center">
-                <Users className="h-5 w-5 text-slate-500 mr-3" />
+                <Users className="h-5 w-5 text-slate-500 dark:text-slate-400 mr-3" />
                 <div>
-                  <div className="text-sm text-slate-500">Team</div>
-                  <div className="font-medium text-slate-900">{project.team}</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400">Team</div>
+                  <div className="font-medium text-slate-900 dark:text-white">{project.team}</div>
                 </div>
               </div>
               <div className="flex items-center">
-                <Target className="h-5 w-5 text-slate-500 mr-3" />
+                <Target className="h-5 w-5 text-slate-500 dark:text-slate-400 mr-3" />
                 <div>
-                  <div className="text-sm text-slate-500">Role</div>
-                  <div className="font-medium text-slate-900">{project.role}</div>
+                  <div className="text-sm text-slate-500 dark:text-slate-400">Role</div>
+                  <div className="font-medium text-slate-900 dark:text-white">{project.role}</div>
                 </div>
               </div>
             </div>
@@ -355,31 +355,31 @@ export default function ProjectDetail() {
         {/* Problem & Solution */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center">
               <Target className="mr-3 h-6 w-6 text-red-500" />
               The Problem
             </h2>
-            <p className="text-slate-700 leading-relaxed">{project.problem}</p>
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{project.problem}</p>
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center">
               <Lightbulb className="mr-3 h-6 w-6 text-yellow-500" />
               The Solution
             </h2>
-            <p className="text-slate-700 leading-relaxed">{project.solution}</p>
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{project.solution}</p>
           </div>
         </div>
 
         {/* Process */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8">Design & Development Process</h2>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Design & Development Process</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {project.process.map((step, index) => (
-              <div key={index} className="flex items-start space-x-4 p-4 bg-slate-50 rounded-lg">
+              <div key={index} className="flex items-start space-x-4 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
                 <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
                   {index + 1}
                 </div>
-                <p className="text-slate-700">{step}</p>
+                <p className="text-slate-700 dark:text-slate-300">{step}</p>
               </div>
             ))}
           </div>
@@ -388,7 +388,7 @@ export default function ProjectDetail() {
         {/* Additional Images */}
         {project.images.length > 1 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">Project Gallery</h2>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Project Gallery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {project.images.slice(1).map((image, index) => (
                 <div key={index} className="relative h-64 rounded-xl overflow-hidden">
@@ -405,15 +405,15 @@ export default function ProjectDetail() {
 
         {/* Results */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 flex items-center">
             <CheckCircle className="mr-3 h-6 w-6 text-green-500" />
             Results & Impact
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {project.results.map((result, index) => (
-              <div key={index} className="flex items-start space-x-4 p-4 bg-green-50 rounded-lg border border-green-200">
+              <div key={index} className="flex items-start space-x-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
                 <CheckCircle className="flex-shrink-0 h-5 w-5 text-green-500 mt-0.5" />
-                <p className="text-slate-700">{result}</p>
+                <p className="text-slate-700 dark:text-slate-300">{result}</p>
               </div>
             ))}
           </div>
@@ -421,12 +421,12 @@ export default function ProjectDetail() {
 
         {/* Technologies */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">Technologies & Tools</h2>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Technologies & Tools</h2>
           <div className="flex flex-wrap gap-3">
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium"
+                className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full text-sm font-medium"
               >
                 {tech}
               </span>
@@ -435,7 +435,7 @@ export default function ProjectDetail() {
         </div>
 
         {/* Navigation */}
-        <div className="border-t border-slate-200 pt-8">
+        <div className="border-t border-slate-200 dark:border-slate-700 pt-8">
           <div className="flex justify-between items-center">
             <Link href="/">
               <Button variant="outline">
@@ -444,7 +444,7 @@ export default function ProjectDetail() {
               </Button>
             </Link>
             <div className="text-center">
-              <p className="text-slate-500 mb-2">Interested in working together?</p>
+              <p className="text-slate-500 dark:text-slate-400 mb-2">Interested in working together?</p>
               <Link href="/#contact">
                 <Button>Get In Touch</Button>
               </Link>
