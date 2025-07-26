@@ -32,7 +32,7 @@ export default function ResearchSection() {
       year: "2022",
       authors: "V. Bhatnagar et al.",
       abstract: "A study examining how student identity and demographic factors influence learning experiences and outcomes in engineering education.",
-      link: "#",
+      link: "https://ieeexplore.ieee.org/document/9962429/metrics#metrics",
       citations: 12,
       category: "Diversity & Inclusion"
     },
@@ -43,7 +43,7 @@ export default function ResearchSection() {
       year: "2024",
       authors: "V. Bhatnagar et al.",
       abstract: "Documentation and analysis of high-altitude balloon missions conducted during major solar eclipse events, including technical challenges and scientific outcomes.",
-      link: "#",
+      link: "https://www.iastatedigitalpress.com/ahac/article/id/17979/",
       citations: 3,
       category: "Aerospace Engineering"
     }
@@ -137,6 +137,7 @@ export default function ResearchSection() {
                     variant="outline"
                     size="sm"
                     className="inline-flex items-center text-primary hover:text-blue-700 transition-colors"
+                    onClick={() => window.open(paper.link, '_blank')}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     View Paper
