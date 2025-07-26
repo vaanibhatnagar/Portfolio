@@ -2,6 +2,8 @@ import { ArrowRight, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiDribbble } from "react-icons/si";
 
+import _7e18af77_291b_43d4_940f_1f47fc64d1a6 from "@assets/7e18af77-291b-43d4-940f-1f47fc64d1a6.JPG";
+
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -19,7 +21,6 @@ export default function HeroSection() {
       >
         Skip to main content
       </a>
-      
       <section id="home" className="relative min-h-screen flex items-center gradient-hero pt-16" role="banner">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -84,7 +85,7 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+              src={_7e18af77_291b_43d4_940f_1f47fc64d1a6}
               alt="Sarah Chen - Professional headshot"
               className="rounded-3xl shadow-2xl w-full max-w-md mx-auto"
             />
