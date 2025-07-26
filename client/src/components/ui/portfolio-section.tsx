@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import type { Project } from "@/lib/types";
+import { Button } from "./button";
+import { Link } from "wouter";
+import type { Project } from "../../lib/types";
 
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -135,10 +136,12 @@ export default function PortfolioSection() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
                 <p className="text-slate-600 mb-4">{project.description}</p>
-                <button className="inline-flex items-center text-primary font-medium hover:text-blue-700 transition-colors">
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
+                <Link href={`/project/${project.id}`}>
+                  <button className="inline-flex items-center text-primary font-medium hover:text-blue-700 transition-colors">
+                    View Case Study
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
