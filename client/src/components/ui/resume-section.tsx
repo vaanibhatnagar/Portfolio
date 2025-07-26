@@ -181,7 +181,7 @@ export default function ResumeSection() {
             <div className="space-y-8">
               {experiences.map((experience, index) => (
                 <div key={experience.id} className="relative pl-8 border-l-2 border-blue-200 dark:border-blue-800">
-                  <div className={`absolute -left-2 top-0 w-4 h-4 rounded-full ${getExperienceDotColor(experience.type)}`}></div>
+                  <div className="absolute -left-2 top-0 w-4 h-4 rounded-full bg-[#9ca3af]"></div>
                   <div className={`p-4 rounded-lg ${getExperienceColor(experience.type)} dark:bg-slate-800 dark:border-slate-700`}>
                     <div className={`text-sm font-semibold ${getExperienceTextColor(experience.type)}`}>
                       {experience.period}
