@@ -2,7 +2,8 @@ import { ArrowRight, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiDribbble } from "react-icons/si";
 
-import _7e18af77_291b_43d4_940f_1f47fc64d1a6 from "@assets/7e18af77-291b-43d4-940f-1f47fc64d1a6.JPG";
+// Temporarily commenting out the image import until asset handling is fixed
+// import _7e18af77_291b_43d4_940f_1f47fc64d1a6 from "@assets/7e18af77-291b-43d4-940f-1f47fc64d1a6.JPG";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -84,11 +85,12 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="relative">
-            <img
-              src={_7e18af77_291b_43d4_940f_1f47fc64d1a6}
-              alt="Sarah Chen - Professional headshot"
-              className="rounded-3xl shadow-2xl w-full max-w-md mx-auto"
-            />
+            <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-slate-700 dark:to-slate-800 rounded-3xl shadow-2xl w-full max-w-md mx-auto h-96 flex items-center justify-center">
+              <div className="text-center text-slate-600 dark:text-slate-400">
+                <div className="text-6xl mb-4">👩‍💼</div>
+                <p className="text-sm">Professional Photo</p>
+              </div>
+            </div>
             <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-xl">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">5+</div>
