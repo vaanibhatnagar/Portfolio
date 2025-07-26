@@ -10,51 +10,51 @@ export default function PortfolioSection() {
   const projects: Project[] = [
     {
       id: "1",
-      title: "E-commerce App Redesign",
-      description: "Complete UX overhaul of a mobile shopping app, improving conversion rates by 40% through user-centered design.",
+      title: "Health Data Consent Framework",
+      description: "Co-managed UI/UX design project creating a consent framework for health data that empowers marginalized communities at Microsoft NERD.",
       category: "ux",
       imageUrl: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["UX Design"],
+      tags: ["UI/UX Design", "User Research"],
     },
     {
       id: "2",
-      title: "Healthcare Dashboard",
-      description: "Research-driven design of a patient monitoring dashboard for healthcare professionals.",
-      category: "ux",
+      title: "Brailldle - MakeMIT Winner",
+      description: "First place winner at MakeMIT - A refreshable Braille display using camera input to convert text to Braille. Designed and tested in 24 hours.",
+      category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["UX Research"],
+      tags: ["3D Design", "Arduino", "Python"],
     },
     {
       id: "3",
-      title: "Smart Home IoT Interface",
-      description: "End-to-end product design for IoT home automation system with intuitive mobile interface.",
-      category: "product",
+      title: "CI/CD Data Pipeline - Optum",
+      description: "Designed and implemented a CI/CD data pipeline with Apache Kafka, GitHub Actions, AWS S3, achieving $0.5M profit boost through optimization.",
+      category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Product Design"],
+      tags: ["Data Pipeline", "AWS", "Java"],
     },
     {
       id: "4",
-      title: "Automated Manufacturing System",
-      description: "Design and implementation of robotic assembly line that increased production efficiency by 35%.",
+      title: "Mehndi Bot",
+      description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
       category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1565493287740-9e8cfb77ebe1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Mechanical Engineering"],
+      tags: ["SolidWorks", "3D Printing", "Robotics"],
     },
     {
       id: "5",
-      title: "Medical Device Prototype",
-      description: "Prototype development of a minimally invasive surgical device from concept to clinical testing.",
+      title: "NASA High Altitude Balloon",
+      description: "Designed robust enclosures for high-altitude balloon missions, withstanding 70,000+ ft altitudes and 120+ mph winds.",
       category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Product Development"],
+      tags: ["Mechanical Design", "NASA"],
     },
     {
       id: "6",
-      title: "Sustainability Tracking App",
-      description: "Mobile app design helping users track and reduce their environmental impact through gamified experiences.",
-      category: "product",
+      title: "Solar Irrigation System",
+      description: "Designed solar-powered drip irrigation system for Boston Food Forest Coalition using fluid dynamics and customizable algorithms.",
+      category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Sustainability"],
+      tags: ["Systems Design", "Sustainability"],
     },
   ];
 
@@ -71,16 +71,29 @@ export default function PortfolioSection() {
 
   const getTagColor = (tag: string) => {
     switch (tag) {
-      case "UX Design":
-      case "UX Research":
+      case "UI/UX Design":
+      case "User Research":
         return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
       case "Product Design":
         return "bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300";
-      case "Mechanical Engineering":
-      case "Product Development":
+      case "SolidWorks":
+      case "3D Printing":
+      case "Robotics":
+      case "Mechanical Design":
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
+      case "Data Pipeline":
+      case "AWS":
+      case "Java":
+      case "Python":
+      case "Arduino":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300";
+      case "NASA":
+        return "bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300";
       case "Sustainability":
+      case "Systems Design":
         return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
+      case "3D Design":
+        return "bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300";
       default:
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }

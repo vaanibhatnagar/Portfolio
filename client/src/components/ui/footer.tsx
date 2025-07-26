@@ -13,8 +13,8 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-300 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Sarah Chen</h3>
-          <p className="mb-6">Bridging Engineering Excellence with Human-Centered Design</p>
+          <h3 className="text-2xl font-bold text-white mb-4">Vaani Bhatnagar</h3>
+          <p className="mb-6">Engineering Student & UI/UX Designer</p>
           <div className="flex justify-center space-x-6 mb-8">
             {socialLinks.map((social, index) => (
               <a
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className="border-t border-slate-700 pt-8">
             <p className="text-sm">
-              &copy; {new Date().getFullYear()} Sarah Chen. All rights reserved.
+              &copy; {new Date().getFullYear()} Vaani Bhatnagar. All rights reserved.
             </p>
           </div>
         </div>

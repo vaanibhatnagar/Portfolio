@@ -32,8 +32,8 @@ export default function HeroSection() {
                   <span className="text-accent">Design</span>
                 </h1>
                 <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Mechanical Engineer turned Product & UX Designer, bridging technical precision
-                  with human-centered design.
+                  Mechanical Engineering student at Olin College, blending technical expertise
+                  with UI/UX design and software engineering.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

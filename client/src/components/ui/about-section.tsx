@@ -2,17 +2,19 @@ import { GraduationCap, Cog, Palette, Check } from "lucide-react";
 
 export default function AboutSection() {
   const engineeringSkills = [
-    "CAD Design & Prototyping",
-    "Systems Thinking",
-    "Project Management",
-    "Data Analysis",
+    "SolidWorks & Onshape CAD",
+    "3D Printing & Fabrication",
+    "Python & MATLAB Programming",
+    "SQL & Database Design", 
+    "Control Systems & Robotics",
   ];
 
   const designSkills = [
-    "User Research & Testing",
-    "Wireframing & Prototyping",
-    "Information Architecture",
-    "Design Systems",
+    "UI/UX Design & Figma",
+    "Product Design & Research",
+    "Adobe Creative Suite",
+    "Data Visualization",
+    "Agile Development",
   ];
 
   return (
@@ -21,17 +23,16 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            My journey from mechanical engineering to UX design represents a unique blend of
-            analytical thinking and creative problem-solving.
+            From mechanical engineering to UI/UX design, I bring together technical expertise
+            with human-centered design thinking.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">The Transition Story</h3>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Graduating from Olin College of Engineering with a degree in Mechanical Engineering, I built a strong foundation in product development and manufacturing through hands-on, team-based projects. Over time, I became increasingly drawn to the human side of engineering: understanding user needs, designing intuitive interfaces, and crafting meaningful interactions.</p>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">That curiosity has led me to pursue UX design and product research, where I have discovered the power of combining technical fluency with deep user empathy. My engineering background gives me a unique advantage to navigate complex systems, collaborate with cross-functional teams, and design solutions that are both feasible and user-centered.
-</p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Currently pursuing my Bachelor's of Science in Mechanical Engineering at Olin College of Engineering (GPA: 3.83/4.0), I've built a strong foundation through hands-on, team-based projects and diverse internship experiences spanning software engineering, data science, and product design.</p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My journey has taken me from designing mechanical systems and building data pipelines to leading UI/UX design projects. This unique combination of technical expertise and design thinking allows me to create solutions that are both innovative and user-centered, bridging the gap between complex engineering systems and intuitive user experiences.</p>
             
           </div>
           <div className="relative">
