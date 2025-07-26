@@ -31,7 +31,10 @@ export default function HeroSection() {
                   From <span className="gradient-text">Engineering</span> to{" "}
                   <span className="gradient-text">Design</span>
                 </h1>
-                <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">A passionate storyteller who brings teams together through design, celebrating every win and turning challenges into opportunities for growth.</p>
+                <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Mechanical engineer turned UX designer, passionate about creating inclusive technology 
+                  that bridges complex systems with human needs.
+                </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button

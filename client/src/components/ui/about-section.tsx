@@ -22,15 +22,32 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">About Me</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">A design enthusiast who believes in the magic of bringing people together, celebrating their wins, and creating captivating experiences.</p>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+            From mechanical systems to human-centered design, I'm passionate about creating 
+            technology that empowers people and builds stronger communities.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">My Story ✨</h3>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My story began at Olin College of Engineering, where I discovered that the best solutions come from bringing diverse minds together. Like a director orchestrating a beautiful scene, I learned to weave technical precision with creative vision, turning every challenge into a collaborative adventure.</p>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">From late-night design sessions (often with my favorite movie soundtracks playing) to celebrating team breakthroughs with impromptu dance breaks, I've found that magic happens when you combine technical excellence with genuine human connection. Whether I'm debugging code or perfecting a user interface, I approach every project with the same energy I bring to the dance floor – passionate, purposeful, and always ready to lift others up.</p>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">I believe that design, like a great book, is all about creating those perfect moments that make people's hearts skip a beat. Every user interaction should feel effortless, every team collaboration should spark joy, and every solution should bring people closer together.</p>
+            <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">My Story</h3>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              My journey began at Olin College of Engineering, where I discovered that the best solutions 
+              come from bringing diverse minds together. What started as a love for mechanical systems 
+              evolved into a passion for designing human-centered experiences.
+            </p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              Through internships at places like Microsoft and hands-on projects ranging from accessible 
+              healthcare systems to Formula SAE racing, I've learned to bridge the gap between technical 
+              complexity and user simplicity. Every line of code, every design decision, every user 
+              interaction is an opportunity to make someone's day a little better.
+            </p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              Today, I'm passionate about using design thinking to solve complex problems, whether that's 
+              optimizing database performance or creating consent frameworks that empower marginalized 
+              communities. I believe the best products come from understanding both the technical 
+              constraints and the human needs.
+            </p>
             
           </div>
           <div className="relative">
