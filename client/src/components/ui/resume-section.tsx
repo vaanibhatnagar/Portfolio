@@ -109,11 +109,11 @@ export default function ResumeSection() {
   };
 
   return (
-    <section id="resume" className="py-20 bg-white">
+    <section id="resume" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Resume</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Resume</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             Download my full resume or explore my professional journey below.
           </p>
           <Button className="inline-flex items-center px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
@@ -125,18 +125,18 @@ export default function ResumeSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Experience Timeline */}
           <div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Professional Experience</h3>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Professional Experience</h3>
             <div className="space-y-8">
               {experiences.map((experience, index) => (
-                <div key={experience.id} className="relative pl-8 border-l-2 border-blue-200">
+                <div key={experience.id} className="relative pl-8 border-l-2 border-blue-200 dark:border-blue-800">
                   <div className={`absolute -left-2 top-0 w-4 h-4 rounded-full ${getExperienceDotColor(experience.type)}`}></div>
-                  <div className={`p-4 rounded-lg ${getExperienceColor(experience.type)}`}>
+                  <div className={`p-4 rounded-lg ${getExperienceColor(experience.type)} dark:bg-slate-800 dark:border-slate-700`}>
                     <div className={`text-sm font-semibold ${getExperienceTextColor(experience.type)}`}>
                       {experience.period}
                     </div>
-                    <h4 className="text-lg font-bold text-slate-900">{experience.title}</h4>
-                    <div className="text-slate-600">{experience.company}</div>
-                    <p className="text-slate-700 mt-2">{experience.description}</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-white">{experience.title}</h4>
+                    <div className="text-slate-600 dark:text-slate-300">{experience.company}</div>
+                    <p className="text-slate-700 dark:text-slate-300 mt-2">{experience.description}</p>
                   </div>
                 </div>
               ))}
@@ -146,15 +146,15 @@ export default function ResumeSection() {
           {/* Skills & Education */}
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Core Skills</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
               <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill, index) => (
                   <div key={index} className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-slate-700">{skill.name}</span>
-                      <span className="text-sm text-slate-500">{skill.percentage}%</span>
+                      <span className="text-slate-700 dark:text-slate-300">{skill.name}</span>
+                      <span className="text-sm text-slate-500 dark:text-slate-400">{skill.percentage}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <div
                         className={`h-2 rounded-full ${getSkillColor(skill.category)}`}
                         style={{ width: `${skill.percentage}%` }}
@@ -166,13 +166,13 @@ export default function ResumeSection() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Education & Certifications</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Education & Certifications</h3>
               <div className="space-y-4">
                 {education.map((edu) => (
-                  <div key={edu.id} className="p-4 bg-slate-50 rounded-lg">
-                    <h4 className="font-bold text-slate-900">{edu.degree}</h4>
-                    <div className="text-slate-600">{edu.institution}</div>
-                    <div className="text-sm text-slate-500">{edu.period}</div>
+                  <div key={edu.id} className="p-4 bg-slate-50 dark:bg-slate-800 rounded-lg">
+                    <h4 className="font-bold text-slate-900 dark:text-white">{edu.degree}</h4>
+                    <div className="text-slate-600 dark:text-slate-300">{edu.institution}</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">{edu.period}</div>
                   </div>
                 ))}
               </div>

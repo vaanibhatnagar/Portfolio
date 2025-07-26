@@ -73,11 +73,11 @@ export default function ResearchSection() {
   };
 
   return (
-    <section id="research" className="py-20 bg-white">
+    <section id="research" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Research Publications</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Research Publications</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Contributing to the academic understanding of engineering education and the integration 
             of design thinking in technical curricula.
           </p>
@@ -86,12 +86,12 @@ export default function ResearchSection() {
         {/* Research Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {researchMetrics.map((metric, index) => (
-            <div key={index} className="bg-slate-50 p-6 rounded-xl text-center">
+            <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl text-center">
               <div className={`inline-flex w-16 h-16 ${metric.bgColor} rounded-full items-center justify-center mb-4 mx-auto`}>
                 <metric.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-slate-900 mb-2">{metric.value}</div>
-              <div className="text-slate-600">{metric.label}</div>
+              <div className="text-3xl font-bold text-slate-900 dark:text-white mb-2">{metric.value}</div>
+              <div className="text-slate-600 dark:text-slate-300">{metric.label}</div>
             </div>
           ))}
         </div>
@@ -101,7 +101,7 @@ export default function ResearchSection() {
           {papers.map((paper) => (
             <div
               key={paper.id}
-              className="bg-slate-50 p-8 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300"
+              className="bg-slate-50 dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
                 <div className="flex-1">
@@ -109,16 +109,16 @@ export default function ResearchSection() {
                     <span className={`px-3 py-1 text-sm font-medium rounded-full ${getCategoryColor(paper.category)} mr-3`}>
                       {paper.category}
                     </span>
-                    <span className="text-sm text-slate-500">{paper.year}</span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">{paper.year}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{paper.title}</h3>
-                  <p className="text-slate-600 mb-3">{paper.authors}</p>
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{paper.title}</h3>
+                  <p className="text-slate-600 dark:text-slate-300 mb-3">{paper.authors}</p>
                   <p className="text-sm font-medium text-primary mb-4">{paper.journal}</p>
                 </div>
                 <div className="flex items-center space-x-4 lg:ml-6">
                   <div className="text-center">
-                    <div className="text-lg font-bold text-slate-900">{paper.citations}</div>
-                    <div className="text-xs text-slate-500">Citations</div>
+                    <div className="text-lg font-bold text-slate-900 dark:text-white">{paper.citations}</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400">Citations</div>
                   </div>
                   <Button
                     variant="outline"
@@ -130,7 +130,7 @@ export default function ResearchSection() {
                   </Button>
                 </div>
               </div>
-              <p className="text-slate-700 leading-relaxed">{paper.abstract}</p>
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{paper.abstract}</p>
             </div>
           ))}
         </div>

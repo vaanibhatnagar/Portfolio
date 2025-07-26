@@ -128,11 +128,11 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section id="contact" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Let's Connect</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             I'm always interested in discussing new opportunities, collaborations, or just
             chatting about design and engineering.
           </p>
@@ -140,12 +140,12 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Send a Message</h3>
+          <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
+                  <Label htmlFor="firstName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                     First Name
                   </Label>
                   <Input
@@ -160,7 +160,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
+                  <Label htmlFor="lastName" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                     Last Name
                   </Label>
                   <Input
@@ -176,7 +176,7 @@ export default function ContactSection() {
                 </div>
               </div>
               <div>
-                <Label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Email
                 </Label>
                 <Input
@@ -191,7 +191,7 @@ export default function ContactSection() {
                 />
               </div>
               <div>
-                <Label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Subject
                 </Label>
                 <Input
@@ -206,7 +206,7 @@ export default function ContactSection() {
                 />
               </div>
               <div>
-                <Label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                <Label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
                   Message
                 </Label>
                 <Textarea
@@ -234,7 +234,7 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Get In Touch</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4">
@@ -242,8 +242,8 @@ export default function ContactSection() {
                       <info.icon className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <div className="font-medium text-slate-900">{info.label}</div>
-                      <div className="text-slate-600">{info.value}</div>
+                      <div className="font-medium text-slate-900 dark:text-white">{info.label}</div>
+                      <div className="text-slate-600 dark:text-slate-300">{info.value}</div>
                     </div>
                   </div>
                 ))}
@@ -251,7 +251,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-slate-900 mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
