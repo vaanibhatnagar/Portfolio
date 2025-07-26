@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-bold font-display gradient-text mb-4">Vaani Bhatnagar</h3>
-          <p className="mb-6">Storyteller • Team Cheerleader • Design Enthusiast</p>
+          <p className="mb-6">Storyteller • Designer • Engineer</p>
           <p className="text-sm text-slate-400 mb-6 italic font-display">
             "Bringing people together, one beautiful experience at a time" 💕
           </p>
