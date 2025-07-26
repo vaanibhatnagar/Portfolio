@@ -5,36 +5,47 @@ export default function ResearchSection() {
   const papers = [
     {
       id: "1",
-      title: "Integrating Design Thinking in Undergraduate Engineering Curricula: A Mixed-Methods Study",
-      journal: "Journal of Engineering Education",
-      year: "2023",
-      authors: "S. Chen, M. Johnson, R. Patel",
-      abstract: "This study examines the integration of design thinking methodologies in traditional engineering curricula and its impact on student innovation and problem-solving capabilities.",
+      title: "Meta-Analysis of Student-Researchers' Learning Journeys Through a Reflective Practice",
+      journal: "IEEE Frontiers in Education Conference (FIE)",
+      year: "2024",
+      authors: "V. Bhatnagar et al.",
+      abstract: "A comprehensive meta-analysis examining the learning journeys of student-researchers through reflective practice methodologies in engineering education.",
       link: "#",
-      citations: 15,
-      category: "Curriculum Design"
+      citations: 5,
+      category: "Education Research"
     },
     {
       id: "2", 
-      title: "Bridging the Gap: Engineering Students' Transition to Human-Centered Design Practices",
-      journal: "International Journal of Engineering Pedagogy",
-      year: "2022",
-      authors: "S. Chen, L. Martinez, K. Thompson",
-      abstract: "An analysis of how engineering students adapt to user-centered design methodologies and the pedagogical approaches that facilitate this transition.",
+      title: "Conforming and Non-Conforming Motivations and Behaviors in Students' Holistic Learning Journeys",
+      journal: "IEEE Frontiers in Education Conference (FIE)",
+      year: "2023",
+      authors: "V. Bhatnagar et al.",
+      abstract: "An investigation into the motivational factors and behaviors that shape students' learning experiences in engineering education contexts.",
       link: "#",
-      citations: 23,
-      category: "Educational Transition"
+      citations: 8,
+      category: "Educational Psychology"
     },
     {
       id: "3",
-      title: "Project-Based Learning in Mechanical Engineering: Fostering Interdisciplinary Collaboration",
-      journal: "ASEE Annual Conference Proceedings",
-      year: "2021",
-      authors: "S. Chen, D. Williams, A. Rodriguez",
-      abstract: "A comprehensive study on project-based learning approaches that encourage collaboration between engineering and design disciplines in undergraduate programs.",
+      title: "Majority or Minority: The Impact of Students' Identities on Their Learning Journeys",
+      journal: "IEEE Frontiers in Education Conference (FIE)",
+      year: "2022",
+      authors: "V. Bhatnagar et al.",
+      abstract: "A study examining how student identity and demographic factors influence learning experiences and outcomes in engineering education.",
       link: "#",
-      citations: 31,
-      category: "Collaborative Learning"
+      citations: 12,
+      category: "Diversity & Inclusion"
+    },
+    {
+      id: "4",
+      title: "Olin College and Boston College's High Altitude Balloon Flights During the 2023 Annular and 2024 Total Solar Eclipses",
+      journal: "Academic High Altitude Conference",
+      year: "2024",
+      authors: "V. Bhatnagar et al.",
+      abstract: "Documentation and analysis of high-altitude balloon missions conducted during major solar eclipse events, including technical challenges and scientific outcomes.",
+      link: "#",
+      citations: 3,
+      category: "Aerospace Engineering"
     }
   ];
 

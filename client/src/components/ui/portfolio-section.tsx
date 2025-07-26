@@ -56,6 +56,46 @@ export default function PortfolioSection() {
       imageUrl: "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tags: ["Systems Design", "Sustainability"],
     },
+    {
+      id: "7",
+      title: "Rocky Robot Control System",
+      description: "Designed control system for balancing an inverted pendulum on a moving cart, achieving system stabilization with detailed analysis.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Control Systems", "Dynamics"],
+    },
+    {
+      id: "8",
+      title: "Orrery - Sustainable Design",
+      description: "Simulates celestial bodies with accurate gear ratios, featuring hand-torched glass planets using sustainable materials.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Mechanical Design", "Sustainability"],
+    },
+    {
+      id: "9",
+      title: "Snowflake Database Optimization",
+      description: "Built database that improved patient query speed by 100x and reduced costs by 79% using SQL, Python, and Azure Data Factory.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["SQL", "Python", "Azure"],
+    },
+    {
+      id: "10",
+      title: "Formula SAE Cockpit Design",
+      description: "Led design of durable dashboard system with integrated LCD, E-Stop, and ergonomic optimization for racing environment.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Mechanical Design", "Ergonomics"],
+    },
+    {
+      id: "11",
+      title: "Product Design Strategy - Optum",
+      description: "Developed Go-To-Market strategies and Marketectures to unify product ecosystems and elevate customer experience.",
+      category: "product",
+      imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Product Strategy", "Market Research"],
+    },
   ];
 
   const filters = [
@@ -94,6 +134,17 @@ export default function PortfolioSection() {
         return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
       case "3D Design":
         return "bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300";
+      case "Control Systems":
+      case "Dynamics":
+        return "bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300";
+      case "SQL":
+      case "Azure":
+        return "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300";
+      case "Ergonomics":
+        return "bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300";
+      case "Product Strategy":
+      case "Market Research":
+        return "bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300";
       default:
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
