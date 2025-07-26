@@ -1,12 +1,11 @@
 import { Linkedin, Github } from "lucide-react";
-import { SiDribbble, SiX } from "react-icons/si";
+import { SiDribbble } from "react-icons/si";
 
 export default function Footer() {
   const socialLinks = [
     { icon: Linkedin, href: "https://linkedin.com" },
-    { icon: SiDribbble, href: "https://dribbble.com" },
     { icon: Github, href: "https://github.com" },
-    { icon: SiX, href: "https://x.com" },
+    { icon: SiDribbble, href: "https://dribbble.com" },
   ];
 
   return (

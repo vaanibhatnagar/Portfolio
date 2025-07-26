@@ -65,15 +65,6 @@ export default function HeroSection() {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="https://dribbble.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
-                aria-label="View my design work on Dribbble"
-              >
-                <SiDribbble className="h-6 w-6" />
-              </a>
-              <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,6 +72,15 @@ export default function HeroSection() {
                 aria-label="See my code projects on GitHub"
               >
                 <Github className="h-6 w-6" />
+              </a>
+              <a
+                href="https://dribbble.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
+                aria-label="View my design work on Dribbble"
+              >
+                <SiDribbble className="h-6 w-6" />
               </a>
             </div>
           </div>
