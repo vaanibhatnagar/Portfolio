@@ -23,8 +23,8 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            From mechanical engineering to UI/UX design, I bring together technical expertise
-            with human-centered design thinking.
+            A design enthusiast who believes in the magic of bringing people together, celebrating their wins, 
+            and creating experiences as captivating as a great love story.
           </p>
         </div>
 
@@ -32,8 +32,9 @@ export default function AboutSection() {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">My Story
 </h3>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Graduating from Olin College of Engineering with a degree in Mechanical Engineering, I've built a strong foundation through hands-on, team-based projects and diverse internship experiences spanning software engineering, data science, and product design.</p>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My journey has taken me from designing mechanical systems and building data pipelines to leading UI/UX design projects. This unique combination of technical expertise and design thinking allows me to create solutions that are both innovative and user-centered, bridging the gap between complex engineering systems and intuitive user experiences.</p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My story began at Olin College of Engineering, where I discovered that the best solutions come from bringing diverse minds together. Like a director orchestrating a beautiful scene, I learned to weave technical precision with creative vision, turning every challenge into a collaborative adventure.</p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">From late-night design sessions (often with my favorite movie soundtracks playing) to celebrating team breakthroughs with impromptu dance breaks, I've found that magic happens when you combine technical excellence with genuine human connection. Whether I'm debugging code or perfecting a user interface, I approach every project with the same energy I bring to the dance floor – passionate, purposeful, and always ready to lift others up.</p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">I believe that design, like romance, is all about creating those perfect moments that make people's hearts skip a beat. Every user interaction should feel effortless, every team collaboration should spark joy, and every solution should bring people closer together.</p>
             
           </div>
           <div className="relative">
@@ -76,6 +77,33 @@ export default function AboutSection() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Personality Section */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center mb-12">Beyond the Code</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-gradient-to-br from-pink-50 to-red-50 dark:from-pink-900/20 dark:to-red-900/20 p-6 rounded-xl text-center border border-pink-200 dark:border-pink-800">
+              <div className="text-4xl mb-3">🎬</div>
+              <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Movie Enthusiast</h4>
+              <p className="text-sm text-slate-600 dark:text-slate-300">From epic dramas to indie gems, I find inspiration in storytelling that moves hearts</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 p-6 rounded-xl text-center border border-purple-200 dark:border-purple-800">
+              <div className="text-4xl mb-3">💃</div>
+              <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Dance Lover</h4>
+              <p className="text-sm text-slate-600 dark:text-slate-300">Whether it's celebrating a project win or just feeling the rhythm, movement is my language of joy</p>
+            </div>
+            <div className="bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-900/20 dark:to-pink-900/20 p-6 rounded-xl text-center border border-rose-200 dark:border-rose-800">
+              <div className="text-4xl mb-3">💕</div>
+              <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Romance in Design</h4>
+              <p className="text-sm text-slate-600 dark:text-slate-300">I believe every user experience should feel like a perfect first date - magical and unforgettable</p>
+            </div>
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl text-center border border-emerald-200 dark:border-emerald-800">
+              <div className="text-4xl mb-3">🤝</div>
+              <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Team Cheerleader</h4>
+              <p className="text-sm text-slate-600 dark:text-slate-300">Your biggest supporter, celebrating every milestone and turning setbacks into comebacks</p>
             </div>
           </div>
         </div>

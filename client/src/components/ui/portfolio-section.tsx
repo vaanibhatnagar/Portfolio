@@ -11,7 +11,7 @@ export default function PortfolioSection() {
     {
       id: "1",
       title: "Health Data Consent Framework",
-      description: "Co-managed UI/UX design project creating a consent framework for health data that empowers marginalized communities at Microsoft NERD.",
+      description: "A passion project close to my heart - designing inclusive health data consent that truly empowers everyone. Like crafting the perfect story, every detail matters.",
       category: "ux",
       imageUrl: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tags: ["UI/UX Design", "User Research"],
@@ -19,7 +19,7 @@ export default function PortfolioSection() {
     {
       id: "2",
       title: "Brailldle - MakeMIT Winner",
-      description: "First place winner at MakeMIT - A refreshable Braille display using camera input to convert text to Braille. Designed and tested in 24 hours.",
+      description: "Pure magic in 24 hours! Our team danced through the night, celebrating every breakthrough as we built accessible tech that makes reading possible for everyone.",
       category: "engineering",
       imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tags: ["3D Design", "Arduino", "Python"],

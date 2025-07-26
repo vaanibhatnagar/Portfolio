@@ -13,7 +13,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h3 className="text-2xl font-bold text-white mb-4">Vaani Bhatnagar</h3>
-          <p className="mb-6">Engineering Student & UI/UX Designer</p>
+          <p className="mb-6">Storyteller • Team Cheerleader • Design Enthusiast</p>
+          <p className="text-sm text-slate-400 mb-6 italic">
+            "Bringing people together, one beautiful experience at a time" 💕
+          </p>
           <div className="flex justify-center space-x-6 mb-8">
             {socialLinks.map((social, index) => (
               <a

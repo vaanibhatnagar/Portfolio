@@ -133,15 +133,15 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            I'm always interested in discussing new opportunities, collaborations, or just
-            chatting about design and engineering.
+            Ready to create something magical together? Whether you want to chat about your next big project, 
+            need a cheerleader for your ambitious goals, or just want to geek out about great design and movies, I'm here for it! ✨
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Let's Start Our Story 💫</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
