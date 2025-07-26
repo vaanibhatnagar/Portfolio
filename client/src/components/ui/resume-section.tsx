@@ -199,24 +199,14 @@ export default function ResumeSection() {
           <div className="space-y-12">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill, index) => (
                   <div key={index} className="group bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between">
                       <span className="text-slate-900 dark:text-white font-semibold">{skill.name}</span>
                       <span className={`px-2 py-1 text-xs font-medium rounded-full ${skill.category === 'design' ? 'bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300' : 'bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300'}`}>
                         {skill.category === 'design' ? 'Design' : 'Technical'}
                       </span>
-                    </div>
-                    <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
-                      <div 
-                        className={`h-2 rounded-full transition-all duration-1000 ease-out ${skill.category === 'design' ? 'bg-gradient-to-r from-primary to-blue-600' : 'bg-gradient-to-r from-accent to-orange-600'}`}
-                        style={{ width: `${skill.percentage}%` }}
-                      />
-                    </div>
-                    <div className="flex justify-between items-center mt-1">
-                      <span className="text-xs text-slate-500 dark:text-slate-400">Proficiency</span>
-                      <span className="text-xs font-medium text-slate-700 dark:text-slate-300">{skill.percentage}%</span>
                     </div>
                   </div>
                 ))}
