@@ -80,6 +80,11 @@ export default function ContactSection() {
       return;
     }
 
+    // Create mailto link for sending message
+    const mailtoLink = `mailto:vaanibhatnagar016@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    window.location.href = mailtoLink;
+    
+    // Also store the form data
     contactMutation.mutate(formData);
   };
 
@@ -87,19 +92,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "sarah.chen@email.com",
+      value: "vaanibhatnagar016@gmail.com",
       bgColor: "bg-primary",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+1 6099752021",
       bgColor: "bg-accent",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "New Jersey",
       bgColor: "bg-slate-700",
     },
   ];
@@ -255,7 +260,9 @@ export default function ContactSection() {
                 your next project.
               </p>
               <a
-                href="mailto:sarah.chen@email.com"
+                href="https://calendly.com/vaanibhatnagar016/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center text-white font-medium hover:text-blue-100 transition-colors"
               >
                 Schedule a Call

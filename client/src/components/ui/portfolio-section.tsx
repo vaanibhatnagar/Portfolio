@@ -254,7 +254,7 @@ export default function PortfolioSection() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <div className="flex items-center mb-2" role="list" aria-label="Project tags">
+                <div className="flex flex-wrap gap-2 mb-3" role="list" aria-label="Project tags">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}

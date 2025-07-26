@@ -96,6 +96,18 @@ export default function ResumeSection() {
     { name: "Adobe Creative Suite", percentage: 80, category: "design" },
     { name: "Arduino & Control Systems", percentage: 85, category: "engineering" },
     { name: "Data Analysis & Visualization", percentage: 87, category: "engineering" },
+    { name: "Java & JavaScript", percentage: 85, category: "engineering" },
+    { name: "AWS & Cloud Computing", percentage: 82, category: "engineering" },
+    { name: "User Research", percentage: 88, category: "design" },
+    { name: "Prototyping & Wireframing", percentage: 90, category: "design" },
+    { name: "Machine Learning", percentage: 80, category: "engineering" },
+    { name: "Git & Version Control", percentage: 90, category: "engineering" },
+    { name: "CAD & Technical Drawing", percentage: 93, category: "engineering" },
+    { name: "Data Pipelines & ETL", percentage: 85, category: "engineering" },
+    { name: "Product Strategy", percentage: 78, category: "design" },
+    { name: "Design Systems", percentage: 82, category: "design" },
+    { name: "Statistical Analysis", percentage: 85, category: "engineering" },
+    { name: "Project Management", percentage: 88, category: "design" },
   ];
 
   const getExperienceColor = (type: Experience["type"]) => {
@@ -127,13 +139,13 @@ export default function ResumeSection() {
   const getExperienceTextColor = (type: Experience["type"]) => {
     switch (type) {
       case "design":
-        return "text-primary";
+        return "text-slate-600 dark:text-slate-400";
       case "transition":
-        return "text-accent";
+        return "text-slate-600 dark:text-slate-400";
       case "engineering":
-        return "text-gray-600";
+        return "text-slate-600 dark:text-slate-400";
       default:
-        return "text-gray-600";
+        return "text-slate-600 dark:text-slate-400";
     }
   };
 

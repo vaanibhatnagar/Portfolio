@@ -143,17 +143,11 @@ export default function ResearchSection() {
             modern design practices, helping students develop both technical expertise and 
             human-centered thinking skills essential for today's complex challenges.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="outline"
-              className="inline-flex items-center bg-white text-primary hover:bg-blue-50 border-white"
-            >
-              <FileText className="mr-2 h-4 w-4" />
-              Download Research CV
-            </Button>
+          <div className="flex justify-center">
             <Button
               variant="outline"
               className="inline-flex items-center bg-transparent text-white hover:bg-white hover:text-primary border-white"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Users className="mr-2 h-4 w-4" />
               Collaborate on Research
