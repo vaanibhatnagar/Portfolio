@@ -30,7 +30,7 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">The Transition Story</h3>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">My Journey</h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Graduating from Olin College of Engineering with a degree in Mechanical Engineering, I've built a strong foundation through hands-on, team-based projects and diverse internship experiences spanning software engineering, data science, and product design.</p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My journey has taken me from designing mechanical systems and building data pipelines to leading UI/UX design projects. This unique combination of technical expertise and design thinking allows me to create solutions that are both innovative and user-centered, bridging the gap between complex engineering systems and intuitive user experiences.</p>
             
