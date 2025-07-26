@@ -110,7 +110,7 @@ export default function AboutSection() {
             <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 p-6 rounded-xl text-center border border-amber-200 dark:border-amber-800">
               <div className="text-4xl mb-3">📚</div>
               <h4 className="font-semibold text-slate-900 dark:text-white mb-2">Book Lover</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-300">Every great story teaches us something new - I find inspiration in books that expand my perspective and creativity</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">Every great story teaches us something new so I find inspiration in books that expand my perspective and creativity</p>
             </div>
             <div className="bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 p-6 rounded-xl text-center border border-emerald-200 dark:border-emerald-800">
               <div className="text-4xl mb-3">🤝</div>
