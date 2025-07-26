@@ -96,6 +96,38 @@ export default function PortfolioSection() {
       imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Product Strategy", "Market Research"],
     },
+    {
+      id: "12",
+      title: "Mao Run",
+      description: "A 2D platformer game with custom physics engine and level design, featuring dynamic obstacles and engaging gameplay mechanics.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Game Development", "Python", "Physics Engine"],
+    },
+    {
+      id: "13",
+      title: "ACO Image Segmentation",
+      description: "Implementation of Ant Colony Optimization algorithm for image segmentation, demonstrating bio-inspired computational techniques.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Machine Learning", "Computer Vision", "Algorithms"],
+    },
+    {
+      id: "14",
+      title: "Dancing Stickfigures",
+      description: "Interactive animation system creating dynamic stickfigure movements with procedural generation and user input controls.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Animation", "Procedural Generation", "Interactive Design"],
+    },
+    {
+      id: "15",
+      title: "Dancing Links Visualizer and Sudoku Solver",
+      description: "Visual implementation of Knuth's Dancing Links algorithm for solving Sudoku puzzles with step-by-step algorithm visualization.",
+      category: "engineering",
+      imageUrl: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      tags: ["Algorithms", "Data Structures", "Visualization"],
+    },
   ];
 
   const filters = [
