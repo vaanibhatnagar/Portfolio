@@ -11,7 +11,6 @@ export default function ResearchSection() {
       authors: "V. Bhatnagar et al.",
       abstract: "A comprehensive meta-analysis examining the learning journeys of student-researchers through reflective practice methodologies in engineering education.",
       link: "https://ieeexplore.ieee.org/document/10893292",
-      citations: 5,
       category: "Education Research"
     },
     {
@@ -22,7 +21,6 @@ export default function ResearchSection() {
       authors: "V. Bhatnagar et al.",
       abstract: "An investigation into the motivational factors and behaviors that shape students' learning experiences in engineering education contexts.",
       link: "https://www.computer.org/csdl/proceedings-article/fie/2023/10343072/1TsBPyLm9Q4",
-      citations: 8,
       category: "Educational Psychology"
     },
     {
@@ -33,7 +31,6 @@ export default function ResearchSection() {
       authors: "V. Bhatnagar et al.",
       abstract: "A study examining how student identity and demographic factors influence learning experiences and outcomes in engineering education.",
       link: "https://ieeexplore.ieee.org/document/9962429/metrics#metrics",
-      citations: 12,
       category: "Diversity & Inclusion"
     },
     {
@@ -44,7 +41,6 @@ export default function ResearchSection() {
       authors: "V. Bhatnagar et al.",
       abstract: "Documentation and analysis of high-altitude balloon missions conducted during major solar eclipse events, including technical challenges and scientific outcomes.",
       link: "https://www.iastatedigitalpress.com/ahac/article/id/17979/",
-      citations: 3,
       category: "Aerospace Engineering"
     }
   ];
@@ -55,12 +51,6 @@ export default function ResearchSection() {
       label: "Published Papers",
       value: "4",
       bgColor: "bg-primary"
-    },
-    {
-      icon: Award,
-      label: "Total Citations",
-      value: "28",
-      bgColor: "bg-accent"
     },
     {
       icon: Users,
@@ -129,10 +119,6 @@ export default function ResearchSection() {
                   <p className="text-sm font-medium text-primary mb-4">{paper.journal}</p>
                 </div>
                 <div className="flex items-center space-x-4 lg:ml-6">
-                  <div className="text-center">
-                    <div className="text-lg font-bold text-slate-900 dark:text-white">{paper.citations}</div>
-                    <div className="text-xs text-slate-500 dark:text-slate-400">Citations</div>
-                  </div>
                   <Button
                     variant="outline"
                     size="sm"
