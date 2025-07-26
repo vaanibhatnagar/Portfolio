@@ -134,7 +134,7 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Ready to create something magical together? Whether you want to chat about your next big project, 
-            need a cheerleader for your ambitious goals, or just want to geek out about great design and movies, I'm here for it! ✨
+            need a cheerleader for your ambitious goals, or just want to geek out about great design, books, and movies, I'm here for it! ✨
           </p>
         </div>
 
