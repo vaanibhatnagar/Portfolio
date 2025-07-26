@@ -12,11 +12,13 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <AboutSection />
-      <PortfolioSection />
-      <ResearchSection />
-      <ResumeSection />
-      <ContactSection />
+      <main id="main-content" className="focus:outline-none" tabIndex={-1}>
+        <AboutSection />
+        <PortfolioSection />
+        <ResearchSection />
+        <ResumeSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );

@@ -29,22 +29,22 @@
   --background: hsl(220, 39%, 11%);
   --foreground: hsl(210, 40%, 98%);
   --muted: hsl(217, 33%, 17%);
-  --muted-foreground: hsl(215, 20%, 65%);
+  --muted-foreground: hsl(215, 20%, 75%);
   --popover: hsl(220, 39%, 11%);
   --popover-foreground: hsl(210, 40%, 98%);
   --card: hsl(220, 39%, 11%);
   --card-foreground: hsl(210, 40%, 98%);
-  --border: hsl(217, 33%, 17%);
-  --input: hsl(217, 33%, 17%);
-  --primary: hsl(217, 91%, 60%);
+  --border: hsl(217, 33%, 25%);
+  --input: hsl(217, 33%, 20%);
+  --primary: hsl(217, 91%, 65%);
   --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(217, 33%, 17%);
+  --secondary: hsl(217, 33%, 20%);
   --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(43, 96%, 56%);
+  --accent: hsl(43, 96%, 60%);
   --accent-foreground: hsl(220, 39%, 11%);
-  --destructive: hsl(0, 63%, 31%);
+  --destructive: hsl(0, 70%, 50%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(217, 91%, 60%);
+  --ring: hsl(217, 91%, 65%);
   --radius: 0.5rem;
 }
 
@@ -70,5 +70,50 @@
   
   .dark .gradient-hero {
     background: linear-gradient(135deg, hsl(220, 39%, 11%) 0%, hsl(217, 91%, 15%) 35%, hsl(43, 96%, 20%) 100%);
+  }
+
+  /* Screen reader only content */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: initial;
+    margin: initial;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* High contrast focus indicators */
+  @media (prefers-contrast: high) {
+    .focus\:ring-2:focus {
+      ring-width: 4px;
+    }
+  }
+
+  /* Reduce motion for accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .transition-all,
+    .transition-colors,
+    .transition-transform {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+    
+    html {
+      scroll-behavior: auto !important;
+    }
   }
 }

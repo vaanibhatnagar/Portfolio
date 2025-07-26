@@ -73,16 +73,16 @@ export default function PortfolioSection() {
     switch (tag) {
       case "UX Design":
       case "UX Research":
-        return "bg-blue-100 text-primary";
+        return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
       case "Product Design":
-        return "bg-orange-100 text-accent";
+        return "bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300";
       case "Mechanical Engineering":
       case "Product Development":
-        return "bg-gray-100 text-slate-700";
+        return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
       case "Sustainability":
-        return "bg-green-100 text-green-700";
+        return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
       default:
-        return "bg-gray-100 text-slate-700";
+        return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
   };
 
@@ -94,17 +94,21 @@ export default function PortfolioSection() {
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             A collection of projects spanning both my engineering and design expertise.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4" role="tablist" aria-label="Filter portfolio projects">
             {filters.map((filter) => (
               <Button
                 key={filter.id}
                 variant={activeFilter === filter.id ? "default" : "outline"}
                 onClick={() => setActiveFilter(filter.id)}
-                className={`px-6 py-2 font-medium transition-colors ${
+                className={`px-6 py-2 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-800 ${
                   activeFilter === filter.id
                     ? "bg-primary text-white"
-                    : "text-slate-600 hover:text-primary"
+                    : "text-slate-600 dark:text-slate-400 hover:text-primary"
                 }`}
+                role="tab"
+                aria-selected={activeFilter === filter.id}
+                aria-controls="portfolio-grid"
+                aria-label={`Filter by ${filter.label}`}
               >
                 {filter.label}
               </Button>
@@ -112,23 +116,29 @@ export default function PortfolioSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div 
+          id="portfolio-grid" 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          role="tabpanel"
+          aria-label={`${filteredProjects.length} ${activeFilter === 'all' ? 'projects' : filters.find(f => f.id === activeFilter)?.label + ' projects'}`}
+        >
           {filteredProjects.map((project) => (
-            <div
+            <article
               key={project.id}
-              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus-within:shadow-xl focus-within:-translate-y-2"
             >
               <img
                 src={project.imageUrl}
-                alt={project.title}
+                alt={`Project image for ${project.title}`}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <div className="flex items-center mb-2">
+                <div className="flex items-center mb-2" role="list" aria-label="Project tags">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
                       className={`px-3 py-1 text-sm font-medium rounded-full ${getTagColor(tag)}`}
+                      role="listitem"
                     >
                       {tag}
                     </span>
@@ -137,13 +147,16 @@ export default function PortfolioSection() {
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
                 <p className="text-slate-600 dark:text-slate-300 mb-4">{project.description}</p>
                 <Link href={`/project/${project.id}`}>
-                  <button className="inline-flex items-center text-primary font-medium hover:text-blue-700 transition-colors">
+                  <button 
+                    className="inline-flex items-center text-primary font-medium hover:text-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
+                    aria-label={`View case study for ${project.title}`}
+                  >
                     View Case Study
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </button>
                 </Link>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

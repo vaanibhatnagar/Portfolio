@@ -155,8 +155,9 @@ export default function ContactSection() {
                     value={formData.firstName}
                     onChange={handleInputChange}
                     placeholder="John"
-                    className="w-full"
+                    className="w-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900"
                     required
+                    aria-describedby="firstName-error"
                   />
                 </div>
                 <div>

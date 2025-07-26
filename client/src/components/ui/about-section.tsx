@@ -60,31 +60,31 @@ export default function AboutSection() {
         </div>
 
         <div className="space-y-8">
-          <h3 className="text-2xl font-bold text-slate-900 text-center">Skill Evolution</h3>
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center">Skill Evolution</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-6 rounded-xl">
-              <h4 className="text-lg font-semibold text-primary mb-4 flex items-center">
+            <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-xl">
+              <h4 className="text-lg font-semibold text-primary dark:text-blue-400 mb-4 flex items-center">
                 <Cog className="mr-3 h-5 w-5" />
                 Engineering Foundation
               </h4>
-              <ul className="space-y-2 text-slate-700">
+              <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                 {engineeringSkills.map((skill, index) => (
                   <li key={index} className="flex items-center">
-                    <Check className="h-4 w-4 text-green-500 mr-2" />
+                    <Check className="h-4 w-4 text-green-500 dark:text-green-400 mr-2" />
                     {skill}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-orange-50 p-6 rounded-xl">
-              <h4 className="text-lg font-semibold text-accent mb-4 flex items-center">
+            <div className="bg-orange-50 dark:bg-slate-800 p-6 rounded-xl">
+              <h4 className="text-lg font-semibold text-accent dark:text-orange-400 mb-4 flex items-center">
                 <Palette className="mr-3 h-5 w-5" />
                 Design Expertise
               </h4>
-              <ul className="space-y-2 text-slate-700">
+              <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                 {designSkills.map((skill, index) => (
                   <li key={index} className="flex items-center">
-                    <Check className="h-4 w-4 text-green-500 mr-2" />
+                    <Check className="h-4 w-4 text-green-500 dark:text-green-400 mr-2" />
                     {skill}
                   </li>
                 ))}

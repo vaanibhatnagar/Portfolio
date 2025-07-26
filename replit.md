@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, full-stack portfolio website showcasing the career transition from mechanical engineering to UX design. The application features a clean, professional design with interactive components, a contact form system, and responsive layout optimized for both desktop and mobile viewing.
+This is a modern, full-stack portfolio website showcasing the career transition from mechanical engineering to UX design. The application features a clean, professional design with interactive components, a contact form system, and responsive layout optimized for both desktop and mobile viewing. The site includes comprehensive accessibility features with WCAG 2.1 AA compliance, full dark mode support, and enhanced user experience for all abilities.
 
 ## User Preferences
 

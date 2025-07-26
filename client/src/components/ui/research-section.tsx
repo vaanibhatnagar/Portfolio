@@ -62,13 +62,13 @@ export default function ResearchSection() {
   const getCategoryColor = (category: string) => {
     switch (category) {
       case "Curriculum Design":
-        return "bg-blue-100 text-primary";
+        return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
       case "Educational Transition":
-        return "bg-orange-100 text-accent";
+        return "bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300";
       case "Collaborative Learning":
-        return "bg-green-100 text-green-700";
+        return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
       default:
-        return "bg-gray-100 text-slate-700";
+        return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
   };
 
