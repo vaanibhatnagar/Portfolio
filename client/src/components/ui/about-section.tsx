@@ -32,15 +32,7 @@ export default function AboutSection() {
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Graduating from Olin College of Engineering with a degree in Mechanical Engineering, I built a strong foundation in product development and manufacturing through hands-on, team-based projects. Over time, I became increasingly drawn to the human side of engineering: understanding user needs, designing intuitive interfaces, and crafting meaningful interactions.</p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">That curiosity has led me to pursue UX design and product research, where I have discovered the power of combining technical fluency with deep user empathy. My engineering background gives me a unique advantage to navigate complex systems, collaborate with cross-functional teams, and design solutions that are both feasible and user-centered.
 </p>
-            <div className="flex items-center space-x-4 bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
-              <div className="flex-shrink-0">
-                <GraduationCap className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <div className="font-semibold text-slate-900 dark:text-white">Olin College of Engineering</div>
-                <div className="text-slate-600 dark:text-slate-300">B.S. Mechanical Engineering</div>
-              </div>
-            </div>
+            
           </div>
           <div className="relative">
             <img
