@@ -199,7 +199,7 @@ export default function ResumeSection() {
           {/* Skills & Education */}
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl font-bold font-display gradient-text mb-6">Core Skills</h3>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
               <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill, index) => (
                   <div key={index} className={`group p-4 rounded-xl border transition-all duration-300 hover:shadow-lg ${
