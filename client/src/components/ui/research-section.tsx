@@ -28,7 +28,7 @@ export default function ResearchSection() {
       title: "Majority or Minority: The Impact of Students' Identities on Their Learning Journeys",
       journal: "IEEE Frontiers in Education Conference (FIE)",
       year: "2022",
-      authors: "V. Bhatnagar et al.",
+      authors: "J. Benton, M. Martin, V. Bhatnagar, Y. V. Zastavker",
       abstract: "A study examining how student identity and demographic factors influence learning experiences and outcomes in engineering education.",
       link: "https://ieeexplore.ieee.org/document/9962429/metrics#metrics",
       category: "Diversity & Inclusion"
@@ -38,7 +38,7 @@ export default function ResearchSection() {
       title: "Olin College and Boston College's High Altitude Balloon Flights During the 2023 Annular and 2024 Total Solar Eclipses",
       journal: "Academic High Altitude Conference",
       year: "2024",
-      authors: "V. Bhatnagar et al.",
+      authors: "M. Belanger, V. Bhatnagar et al.",
       abstract: "Documentation and analysis of high-altitude balloon missions conducted during major solar eclipse events, including technical challenges and scientific outcomes.",
       link: "https://www.iastatedigitalpress.com/ahac/article/id/17979/",
       category: "Aerospace Engineering"
@@ -55,7 +55,7 @@ export default function ResearchSection() {
     {
       icon: Users,
       label: "Collaborations",
-      value: "8",
+      value: "4",
       bgColor: "bg-slate-700"
     }
   ];
@@ -87,9 +87,9 @@ export default function ResearchSection() {
         </div>
 
         {/* Research Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="flex flex-wrap justify-center gap-6 mb-16">
           {researchMetrics.map((metric, index) => (
-            <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl text-center">
+            <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl text-center w-64">
               <div className={`inline-flex w-16 h-16 ${metric.bgColor} rounded-full items-center justify-center mb-4 mx-auto`}>
                 <metric.icon className="h-8 w-8 text-white" />
               </div>
