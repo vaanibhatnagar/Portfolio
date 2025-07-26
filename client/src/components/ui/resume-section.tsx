@@ -117,9 +117,9 @@ export default function ResumeSection() {
       case "transition":
         return "bg-orange-50 border-accent";
       case "engineering":
-        return "bg-gray-50 border-gray-400";
+        return "bg-orange-50 border-accent";
       default:
-        return "bg-gray-50 border-gray-400";
+        return "bg-orange-50 border-accent";
     }
   };
 
@@ -130,9 +130,9 @@ export default function ResumeSection() {
       case "transition":
         return "bg-accent";
       case "engineering":
-        return "bg-gray-400";
+        return "bg-accent";
       default:
-        return "bg-gray-400";
+        return "bg-accent";
     }
   };
 
@@ -141,11 +141,11 @@ export default function ResumeSection() {
       case "design":
         return "text-primary";
       case "transition":
-        return "text-slate-600 dark:text-slate-400";
+        return "text-accent";
       case "engineering":
-        return "text-slate-600 dark:text-slate-400";
+        return "text-accent";
       default:
-        return "text-slate-600 dark:text-slate-400";
+        return "text-accent";
     }
   };
 
