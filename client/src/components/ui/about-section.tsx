@@ -22,10 +22,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">About Me</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            A design enthusiast who believes in the magic of bringing people together, celebrating their wins, 
-            and creating experiences as captivating as a great love story.
-          </p>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">A design enthusiast who believes in the magic of bringing people together, celebrating their wins, and creating captivating experiences.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
