@@ -201,13 +201,12 @@ export default function ResumeSection() {
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
               <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill, index) => (
-                  <div key={index} className="group bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-                    <div className="flex items-center justify-between">
-                      <span className="text-slate-900 dark:text-white font-semibold">{skill.name}</span>
-                      <span className={`px-2 py-1 text-xs font-medium rounded-full ${skill.category === 'design' ? 'bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300' : 'bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300'}`}>
-                        {skill.category === 'design' ? 'Design' : 'Technical'}
-                      </span>
-                    </div>
+                  <div key={index} className={`group p-4 rounded-xl border transition-all duration-300 hover:shadow-lg ${
+                    skill.category === 'design' 
+                      ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 hover:border-primary/50' 
+                      : 'bg-orange-50 dark:bg-orange-900/20 border-orange-200 dark:border-orange-800 hover:border-accent/50'
+                  }`}>
+                    <span className="text-slate-900 dark:text-white font-semibold">{skill.name}</span>
                   </div>
                 ))}
               </div>
