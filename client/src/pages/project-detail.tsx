@@ -132,7 +132,7 @@ const projectsData: Record<string, ProjectDetails> = {
     id: "4",
     title: "Mehndi Didi - Automated Henna Applicator",
     subtitle: "Innovative robotic system for precise henna application using XY gantry",
-    category: "engineering",
+    category: "product",
     duration: "4 months",
     team: "PIE (Principles of Integrated Engineering) team members",
     role: "Lead Mechanical Designer & Systems Integration",
@@ -274,7 +274,7 @@ const projectsData: Record<string, ProjectDetails> = {
     id: "8",
     title: "Orrery - Team Moon",
     subtitle: "Miniature mechanical model of the solar system with precise planetary orbits",
-    category: "engineering",
+    category: "product",
     duration: "4 months",
     team: "Team Moon - Mechanical engineering students",
     role: "Design Engineer & Project Manager",
@@ -345,7 +345,7 @@ const projectsData: Record<string, ProjectDetails> = {
     id: "10",
     title: "Formula SAE Cockpit Design",
     subtitle: "Ergonomic dashboard system for high-performance racing environment",
-    category: "engineering",
+    category: "product",
     duration: "10 months",
     team: "Olin Electric Motorsports team, electrical engineers, ergonomics specialists",
     role: "Cockpit Engineer",
@@ -415,7 +415,7 @@ const projectsData: Record<string, ProjectDetails> = {
     id: "12",
     title: "Mao Run",
     subtitle: "2D platformer game where the rules are unknown",
-    category: "engineering",
+    category: "ux",
     duration: "4 months",
     team: "Lili Baker, Cherry Pham, Vaani Bhatnagar",
     role: "UI/UX Designer",
@@ -523,7 +523,7 @@ const projectsData: Record<string, ProjectDetails> = {
     id: "15",
     title: "Dancing Links Algorithm Implementation",
     subtitle: "Python implementation of Knuth's Dancing Links (DLX) algorithm with interactive web visualizer",
-    category: "engineering",
+    category: "ux",
     duration: "4 months",
     team: "Gabe Zak, Vaani Bhatnagar, Eddy Pan",
     role: "Algorithm Developer & Research Contributor",
@@ -601,6 +601,102 @@ export default function ProjectDetail() {
         return "Engineering";
       default:
         return category;
+    }
+  };
+
+  const getTechTagColor = (tech: string) => {
+    switch (tech) {
+      case "UI/UX Design":
+      case "User Research":
+      case "Game Design":
+      case "Sprite Design":
+      case "User Experience":
+        return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
+      case "Product Design":
+      case "Product Strategy":
+      case "Market Research":
+      case "Competitive Analysis":
+      case "Customer Journey Mapping":
+      case "Strategic Design":
+        return "bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300";
+      case "SolidWorks":
+      case "3D Printing":
+      case "Robotics":
+      case "Mechanical Design":
+      case "Precision Machining":
+      case "Gear Design":
+      case "Sustainable Materials":
+      case "Glass Working":
+        return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
+      case "Data Pipeline":
+      case "AWS":
+      case "Java":
+      case "Python":
+      case "Arduino":
+      case "Stepper Motors":
+      case "JavaScript":
+      case "React":
+      case "Jupyter Notebook":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300";
+      case "NASA":
+        return "bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300";
+      case "Sustainability":
+      case "Systems Design":
+        return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
+      case "3D Design":
+        return "bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300";
+      case "Control Systems":
+      case "Dynamics":
+      case "Control Theory":
+      case "PID Control":
+      case "State-Space Analysis":
+        return "bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300";
+      case "SQL":
+      case "Azure":
+      case "Snowflake":
+      case "Azure Data Factory":
+      case "Database Optimization":
+        return "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300";
+      case "Ergonomics":
+      case "Electronics Integration":
+      case "Ergonomic Design":
+      case "LCD Displays":
+      case "Safety Systems":
+        return "bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300";
+      case "Machine Learning":
+      case "Computer Vision":
+      case "Algorithms":
+      case "Bio-inspired Algorithms":
+      case "Algorithm Design":
+        return "bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300";
+      case "Game Development":
+      case "Physics Engine":
+      case "Interactive Design":
+      case "Animation":
+      case "Procedural Generation":
+      case "Pygame":
+        return "bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300";
+      case "Data Structures":
+      case "Visualization":
+      case "OpenCV":
+      case "NumPy":
+        return "bg-violet-100 dark:bg-violet-900 text-violet-700 dark:text-violet-300";
+      case "Evolutionary Algorithms":
+      case "Genetic Programming":
+      case "Audio Processing":
+      case "Animation Systems":
+        return "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300";
+      case "MATLAB":
+      case "Simulink":
+        return "bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300";
+      case "Apache Kafka":
+      case "GitHub Actions":
+      case "AWS S3":
+      case "Docker":
+      case "Jenkins":
+        return "bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300";
+      default:
+        return "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300";
     }
   };
 
@@ -749,7 +845,7 @@ export default function ProjectDetail() {
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full text-sm font-medium"
+                className={`px-4 py-2 rounded-full text-sm font-medium ${getTechTagColor(tech)}`}
               >
                 {tech}
               </span>

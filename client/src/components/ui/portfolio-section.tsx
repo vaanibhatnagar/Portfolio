@@ -36,7 +36,7 @@ export default function PortfolioSection() {
       id: "4",
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
-      category: "engineering",
+      category: "product",
       imageUrl: "https://images.unsplash.com/photo-1565493287740-9e8cfb77ebe1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       tags: ["SolidWorks", "3D Printing", "Robotics"],
     },
@@ -68,7 +68,7 @@ export default function PortfolioSection() {
       id: "8",
       title: "Orrery - Sustainable Design",
       description: "Simulates celestial bodies with accurate gear ratios, featuring hand-torched glass planets using sustainable materials.",
-      category: "engineering",
+      category: "product",
       imageUrl: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Mechanical Design", "Sustainability"],
     },
@@ -84,7 +84,7 @@ export default function PortfolioSection() {
       id: "10",
       title: "Formula SAE Cockpit Design",
       description: "Led design of durable dashboard system with integrated LCD, E-Stop, and ergonomic optimization for racing environment.",
-      category: "engineering",
+      category: "product",
       imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Mechanical Design", "Ergonomics"],
     },
@@ -100,7 +100,7 @@ export default function PortfolioSection() {
       id: "12",
       title: "Mao Run",
       description: "A 2D platformer game with custom physics engine and level design, featuring dynamic obstacles and engaging gameplay mechanics.",
-      category: "engineering",
+      category: "ux",
       imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Game Development", "Python", "Physics Engine"],
     },
@@ -124,7 +124,7 @@ export default function PortfolioSection() {
       id: "15",
       title: "Dancing Links Visualizer and Sudoku Solver",
       description: "Visual implementation of Knuth's Dancing Links algorithm for solving Sudoku puzzles with step-by-step algorithm visualization.",
-      category: "engineering",
+      category: "ux",
       imageUrl: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["Algorithms", "Data Structures", "Visualization"],
     },
@@ -177,6 +177,31 @@ export default function PortfolioSection() {
       case "Product Strategy":
       case "Market Research":
         return "bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300";
+      case "Machine Learning":
+      case "Computer Vision":
+      case "Algorithms":
+      case "Bio-inspired Algorithms":
+        return "bg-pink-100 dark:bg-pink-900 text-pink-700 dark:text-pink-300";
+      case "Game Development":
+      case "Physics Engine":
+      case "Interactive Design":
+      case "Animation":
+      case "Procedural Generation":
+        return "bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300";
+      case "Data Structures":
+      case "Visualization":
+      case "OpenCV":
+      case "NumPy":
+        return "bg-violet-100 dark:bg-violet-900 text-violet-700 dark:text-violet-300";
+      case "Game Design":
+      case "Sprite Design":
+      case "User Experience":
+        return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
+      case "Evolutionary Algorithms":
+      case "Genetic Programming":
+      case "Audio Processing":
+      case "Animation Systems":
+        return "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300";
       default:
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
