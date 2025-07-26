@@ -204,7 +204,7 @@ export default function ResumeSection() {
                   <div key={index} className={`group p-4 rounded-xl border transition-all duration-300 hover:shadow-lg ${
                     skill.category === 'design' 
                       ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 hover:border-primary/50' 
-                      : 'bg-orange-50 dark:bg-purple-900/20 border-orange-200 dark:border-purple-800 hover:border-accent/50 dark:hover:border-purple-500'
+                      : 'bg-orange-50 dark:bg-orange-800/30 border-orange-200 dark:border-orange-600 hover:border-accent/50'
                   }`}>
                     <span className="text-slate-900 dark:text-white font-semibold">{skill.name}</span>
                   </div>
