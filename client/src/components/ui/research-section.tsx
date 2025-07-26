@@ -53,31 +53,33 @@ export default function ResearchSection() {
     {
       icon: FileText,
       label: "Published Papers",
-      value: "3",
+      value: "4",
       bgColor: "bg-primary"
     },
     {
       icon: Award,
       label: "Total Citations",
-      value: "69",
+      value: "28",
       bgColor: "bg-accent"
     },
     {
       icon: Users,
       label: "Collaborations",
-      value: "6",
+      value: "8",
       bgColor: "bg-slate-700"
     }
   ];
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case "Curriculum Design":
+      case "Education Research":
         return "bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-300";
-      case "Educational Transition":
+      case "Educational Psychology":
         return "bg-orange-100 dark:bg-orange-900 text-accent dark:text-orange-300";
-      case "Collaborative Learning":
+      case "Diversity & Inclusion":
         return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
+      case "Aerospace Engineering":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300";
       default:
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
