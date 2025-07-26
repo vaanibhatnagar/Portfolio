@@ -251,22 +251,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`w-12 h-12 ${social.bgColor} rounded-lg flex items-center justify-center text-white transition-colors`}
-                  >
-                    <social.icon className="h-5 w-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
+            
 
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl text-white">
               <h4 className="text-lg font-semibold mb-2">Ready to Collaborate?</h4>
