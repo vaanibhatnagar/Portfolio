@@ -10,7 +10,7 @@ export default function ResearchSection() {
       year: "2024",
       authors: "V. Bhatnagar et al.",
       abstract: "A comprehensive meta-analysis examining the learning journeys of student-researchers through reflective practice methodologies in engineering education.",
-      link: "#",
+      link: "https://ieeexplore.ieee.org/document/10893292",
       citations: 5,
       category: "Education Research"
     },
@@ -21,7 +21,7 @@ export default function ResearchSection() {
       year: "2023",
       authors: "V. Bhatnagar et al.",
       abstract: "An investigation into the motivational factors and behaviors that shape students' learning experiences in engineering education contexts.",
-      link: "#",
+      link: "https://www.computer.org/csdl/proceedings-article/fie/2023/10343072/1TsBPyLm9Q4",
       citations: 8,
       category: "Educational Psychology"
     },

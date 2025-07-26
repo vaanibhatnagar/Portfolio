@@ -3,9 +3,9 @@ import { SiDribbble } from "react-icons/si";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com" },
-    { icon: Github, href: "https://github.com" },
-    { icon: SiDribbble, href: "https://dribbble.com" },
+    { icon: Linkedin, href: "https://linkedin.com/in/vaani-bhatnagar-3b90b3182/" },
+    { icon: Github, href: "https://github.com/vaanibhatnagar" },
+    { icon: SiDribbble, href: "https://dribbble.com/vaani-bhatnagar/" },
   ];
 
   return (

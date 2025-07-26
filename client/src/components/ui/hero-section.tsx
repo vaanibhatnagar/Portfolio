@@ -56,7 +56,7 @@ export default function HeroSection() {
               </div>
             <div className="flex items-center space-x-6 pt-4">
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/vaani-bhatnagar-3b90b3182/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
@@ -65,7 +65,7 @@ export default function HeroSection() {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/vaanibhatnagar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://dribbble.com"
+                href="https://dribbble.com/vaani-bhatnagar/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-900 rounded-md p-1"
