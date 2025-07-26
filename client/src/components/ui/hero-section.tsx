@@ -27,11 +27,11 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
-                  From <span className="text-primary">Engineering</span> to{" "}
-                  <span className="text-accent">Design</span>
+                <h1 className="text-4xl lg:text-6xl font-bold font-display leading-tight">
+                  From <span className="gradient-text">Engineering</span> to{" "}
+                  <span className="gradient-text">Design</span>
                 </h1>
-                <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">Design-minded mechanical engineer, blending technical expertise with UI/UX design and software engineering.</p>
+                <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">A passionate storyteller who brings teams together through design, celebrating every win and turning challenges into opportunities for growth.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button

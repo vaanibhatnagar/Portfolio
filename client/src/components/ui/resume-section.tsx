@@ -164,7 +164,7 @@ export default function ResumeSection() {
     <section id="resume" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">My Journey 🌟</h2>
+          <h2 className="text-4xl font-bold font-display gradient-text mb-4">My Journey 🌟</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             Every role has been a new adventure, every challenge a chance to grow, and every success 
             a moment worth celebrating with the amazing teams who made it possible.

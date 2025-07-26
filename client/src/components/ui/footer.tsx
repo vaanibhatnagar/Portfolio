@@ -12,9 +12,9 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-300 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Vaani Bhatnagar</h3>
+          <h3 className="text-2xl font-bold font-display gradient-text mb-4">Vaani Bhatnagar</h3>
           <p className="mb-6">Storyteller • Team Cheerleader • Design Enthusiast</p>
-          <p className="text-sm text-slate-400 mb-6 italic">
+          <p className="text-sm text-slate-400 mb-6 italic font-display">
             "Bringing people together, one beautiful experience at a time" 💕
           </p>
           <div className="flex justify-center space-x-6 mb-8">

@@ -211,7 +211,7 @@ export default function PortfolioSection() {
     <section id="portfolio" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Portfolio</h2>
+          <h2 className="text-4xl font-bold font-display gradient-text mb-4">Portfolio</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             A collection of projects spanning both my engineering and design expertise.
           </p>

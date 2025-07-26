@@ -21,7 +21,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold font-display gradient-text mb-4">About Me</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             A design enthusiast who believes in the magic of bringing people together, celebrating their wins, 
             and creating experiences as captivating as a great love story.
@@ -30,8 +30,7 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">My Story
-</h3>
+            <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white">My Story ✨</h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">My story began at Olin College of Engineering, where I discovered that the best solutions come from bringing diverse minds together. Like a director orchestrating a beautiful scene, I learned to weave technical precision with creative vision, turning every challenge into a collaborative adventure.</p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">From late-night design sessions (often with my favorite movie soundtracks playing) to celebrating team breakthroughs with impromptu dance breaks, I've found that magic happens when you combine technical excellence with genuine human connection. Whether I'm debugging code or perfecting a user interface, I approach every project with the same energy I bring to the dance floor – passionate, purposeful, and always ready to lift others up.</p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">I believe that design, like a great book, is all about creating those perfect moments that make people's hearts skip a beat. Every user interaction should feel effortless, every team collaboration should spark joy, and every solution should bring people closer together.</p>
@@ -83,7 +82,7 @@ export default function AboutSection() {
 
         {/* Personality Section */}
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center mb-12">Beyond the Code</h3>
+          <h3 className="text-2xl font-bold font-display gradient-text text-center mb-12">Beyond the Code</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-pink-50 to-red-50 dark:from-pink-900/20 dark:to-red-900/20 p-6 rounded-xl text-center border border-pink-200 dark:border-pink-800">
               <div className="text-4xl mb-3">🎬</div>
