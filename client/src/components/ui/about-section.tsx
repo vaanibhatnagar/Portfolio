@@ -45,7 +45,8 @@ export default function AboutSection() {
         </div>
 
         <div className="space-y-8">
-          <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center">Skill Evolution</h3>
+          <h3 className="text-2xl font-bold text-slate-900 dark:text-white text-center">Skills
+</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-xl">
               <h4 className="text-lg font-semibold text-primary dark:text-blue-400 mb-4 flex items-center">
