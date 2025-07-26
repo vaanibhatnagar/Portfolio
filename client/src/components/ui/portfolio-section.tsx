@@ -87,11 +87,11 @@ export default function PortfolioSection() {
   };
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-50">
+    <section id="portfolio" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Portfolio</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">Portfolio</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             A collection of projects spanning both my engineering and design expertise.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -116,7 +116,7 @@ export default function PortfolioSection() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <img
                 src={project.imageUrl}
@@ -134,8 +134,8 @@ export default function PortfolioSection() {
                     </span>
                   ))}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{project.title}</h3>
-                <p className="text-slate-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">{project.description}</p>
                 <Link href={`/project/${project.id}`}>
                   <button className="inline-flex items-center text-primary font-medium hover:text-blue-700 transition-colors">
                     View Case Study

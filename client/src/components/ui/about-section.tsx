@@ -16,11 +16,11 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">About Me</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             My journey from mechanical engineering to UX design represents a unique blend of
             analytical thinking and creative problem-solving.
           </p>
@@ -28,25 +28,25 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900">The Transition Story</h3>
-            <p className="text-slate-600 leading-relaxed">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">The Transition Story</h3>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
               After graduating from Olin College of Engineering with a degree in Mechanical
               Engineering, I spent several years in product development and manufacturing.
               However, I found myself increasingly drawn to the human side of engineering—understanding
               user needs, designing intuitive interfaces, and creating meaningful experiences.
             </p>
-            <p className="text-slate-600 leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
               This curiosity led me to pursue UX design and product research, where I discovered
               that my engineering background provides a unique advantage in understanding technical
               constraints while advocating for user needs.
             </p>
-            <div className="flex items-center space-x-4 bg-slate-50 p-4 rounded-lg">
+            <div className="flex items-center space-x-4 bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
               <div className="flex-shrink-0">
                 <GraduationCap className="h-8 w-8 text-primary" />
               </div>
               <div>
-                <div className="font-semibold text-slate-900">Olin College of Engineering</div>
-                <div className="text-slate-600">B.S. Mechanical Engineering</div>
+                <div className="font-semibold text-slate-900 dark:text-white">Olin College of Engineering</div>
+                <div className="text-slate-600 dark:text-slate-300">B.S. Mechanical Engineering</div>
               </div>
             </div>
           </div>

@@ -16,11 +16,11 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight">
                 From <span className="text-primary">Engineering</span> to{" "}
                 <span className="text-accent">Design</span>
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                 Mechanical Engineer turned Product & UX Designer, bridging technical precision
                 with human-centered design.
               </p>
@@ -36,7 +36,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 onClick={() => scrollToSection("contact")}
-                className="inline-flex items-center px-8 py-3 border-2 border-slate-300 text-slate-700 font-medium rounded-lg hover:border-primary hover:text-primary transition-colors"
+                className="inline-flex items-center px-8 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-medium rounded-lg hover:border-primary hover:text-primary transition-colors"
               >
                 Get In Touch
               </Button>
