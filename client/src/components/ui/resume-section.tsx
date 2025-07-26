@@ -139,7 +139,7 @@ export default function ResumeSection() {
   const getExperienceTextColor = (type: Experience["type"]) => {
     switch (type) {
       case "design":
-        return "text-slate-600 dark:text-slate-400";
+        return "text-primary";
       case "transition":
         return "text-slate-600 dark:text-slate-400";
       case "engineering":
