@@ -31,11 +31,8 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">The Transition Story</h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">Graduating from Olin College of Engineering with a degree in Mechanical Engineering, I built a strong foundation in product development and manufacturing through hands-on, team-based projects. Over time, I became increasingly drawn to the human side of engineering—understanding user needs, designing intuitive interfaces, and crafting meaningful interactions.
 </p>
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              This curiosity led me to pursue UX design and product research, where I discovered
-              that my engineering background provides a unique advantage in understanding technical
-              constraints while advocating for user needs.
-            </p>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">That curiosity has led me to pursue UX design and product research, where I have discovered the power of combining technical fluency with deep user empathy. My engineering background gives me a unique advantage to navigate complex systems, collaborate with cross-functional teams, and design solutions that are both feasible and user-centered.
+</p>
             <div className="flex items-center space-x-4 bg-slate-50 dark:bg-slate-800 p-4 rounded-lg">
               <div className="flex-shrink-0">
                 <GraduationCap className="h-8 w-8 text-primary" />
