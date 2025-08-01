@@ -486,7 +486,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
     ],
     technologies: ["Python", "OpenCV", "NumPy", "Machine Learning", "Computer Vision", "Bio-inspired Algorithms"],
-    link: "https://github.com/vaanibhatnagar/aco-image-segmentation"
+    link: "https://github.com/cherryyypham/imseg-ACO/blob/main/aco_diagram.PNG"
   },
   "14": {
     id: "14",
