@@ -1,11 +1,14 @@
 import { ArrowRight, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiDribbble } from "react-icons/si";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 // Using static asset path for professional photo
 const professionalPhoto = "/images/professional-photo.jpg";
 
 export default function HeroSection() {
+  const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -23,7 +26,12 @@ export default function HeroSection() {
         Skip to main content
       </a>
       <section id="home" className="relative min-h-screen flex items-center gradient-hero pt-16" role="banner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div 
+          ref={heroRef as React.RefObject<HTMLDivElement>} 
+          className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 transition-all duration-1000 ${
+            heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">

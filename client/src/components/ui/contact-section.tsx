@@ -9,8 +9,12 @@ import { useToast } from "@/hooks/use-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import type { InsertContact } from "@shared/schema";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function ContactSection() {
+  const { ref: contactRef, isVisible: contactVisible } = useScrollAnimation();
+  const { ref: formRef, isVisible: formVisible } = useScrollAnimation();
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -130,7 +134,12 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={contactRef as React.RefObject<HTMLDivElement>} 
+          className={`text-center mb-16 transition-all duration-1000 ${
+            contactVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">Let's Connect</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Ready to create something magical together? Whether you want to chat about your next big project, 
@@ -138,7 +147,12 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div 
+          ref={formRef as React.RefObject<HTMLDivElement>} 
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-16 transition-all duration-1000 delay-200 ${
+            formVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           {/* Contact Form */}
           <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-bold font-display text-slate-900 dark:text-white mb-6">Let's Start Our Story 💫</h3>

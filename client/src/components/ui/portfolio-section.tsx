@@ -2,10 +2,13 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./button";
 import { Link } from "wouter";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 import type { Project } from "../../lib/types";
 
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const { ref: portfolioRef, isVisible: portfolioVisible } = useScrollAnimation();
+  const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation();
 
   const projects: Project[] = [
     {
@@ -273,7 +276,12 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={portfolioRef as React.RefObject<HTMLDivElement>} 
+          className={`text-center mb-16 transition-all duration-1000 ${
+            portfolioVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">Portfolio</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             A collection of projects spanning both my engineering and design expertise.
@@ -287,7 +295,7 @@ export default function PortfolioSection() {
                 className={`px-6 py-2 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-800 ${
                   activeFilter === filter.id
                     ? "bg-primary text-white"
-                    : "text-slate-600 dark:text-slate-400 hover:text-primary"
+                    : "text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
                 }`}
                 role="tab"
                 aria-selected={activeFilter === filter.id}
@@ -301,8 +309,11 @@ export default function PortfolioSection() {
         </div>
 
         <div 
+          ref={gridRef as React.RefObject<HTMLDivElement>} 
           id="portfolio-grid" 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-300 ${
+            gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
           role="tabpanel"
           aria-label={`${filteredProjects.length} ${activeFilter === 'all' ? 'projects' : filters.find(f => f.id === activeFilter)?.label + ' projects'}`}
         >
