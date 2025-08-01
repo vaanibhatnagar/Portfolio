@@ -753,7 +753,8 @@ const projectsData: Record<string, ProjectDetails> = {
       "/images/projects/smart-plugs/social-features.jpg"
     ],
     technologies: ["Sustainable Design", "Smart Home Technology", "AI Assistant Design", "Behavioral Design", "Life Cycle Analysis", "User Research"],
-    link: "#"
+    link: "#",
+    posterPath: "/attached_assets/1_1754024963565.png"
   }
 };
 
