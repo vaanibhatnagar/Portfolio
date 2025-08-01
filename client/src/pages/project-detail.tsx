@@ -1,6 +1,6 @@
 import { useParams } from "wouter";
 import { useEffect, useState } from "react";
-import { ArrowLeft, ExternalLink, Calendar, Users, Target, Lightbulb, CheckCircle, X } from "lucide-react";
+import { ArrowLeft, ExternalLink, Calendar, Users, Target, Lightbulb, CheckCircle, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "wouter";
 
@@ -765,11 +765,58 @@ export default function ProjectDetail() {
   const projectId = params.id;
   const project = projectId ? projectsData[projectId] : null;
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPosterIndex, setCurrentPosterIndex] = useState(0);
 
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [projectId]);
+
+  // Navigation functions for poster carousel
+  const goToPrevPoster = () => {
+    if (project?.posterPaths) {
+      setCurrentPosterIndex((prev) => 
+        prev === 0 ? project.posterPaths!.length - 1 : prev - 1
+      );
+    }
+  };
+
+  const goToNextPoster = () => {
+    if (project?.posterPaths) {
+      setCurrentPosterIndex((prev) => 
+        prev === project.posterPaths!.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const goToPoster = (index: number) => {
+    setCurrentPosterIndex(index);
+  };
+
+  // Reset poster index when modal opens
+  useEffect(() => {
+    if (isModalOpen) {
+      setCurrentPosterIndex(0);
+    }
+  }, [isModalOpen]);
+
+  // Keyboard navigation for carousel
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (isModalOpen && project?.posterPaths && project.posterPaths.length > 1) {
+        if (e.key === 'ArrowLeft') {
+          goToPrevPoster();
+        } else if (e.key === 'ArrowRight') {
+          goToNextPoster();
+        } else if (e.key === 'Escape') {
+          setIsModalOpen(false);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [isModalOpen, project?.posterPaths]);
 
   if (!project) {
     return (
@@ -1160,22 +1207,52 @@ export default function ProjectDetail() {
               <X className="h-6 w-6 text-slate-600 dark:text-slate-300" />
             </button>
             
-            {/* Poster Images Display */}
-            <div className="w-full h-full p-4 overflow-y-auto">
+            {/* Poster Images Display with Carousel */}
+            <div className="w-full h-full p-4 flex items-center justify-center relative">
               {project.posterPaths && project.posterPaths.length > 1 ? (
-                <div className="space-y-6">
-                  {project.posterPaths.map((posterPath, index) => (
-                    <div key={index} className="flex justify-center">
-                      <img
-                        src={posterPath}
-                        alt={`Project Poster ${index + 1}`}
-                        className="max-w-full h-auto object-contain"
+                <>
+                  {/* Left Arrow */}
+                  <button
+                    onClick={goToPrevPoster}
+                    className="absolute left-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+                  >
+                    <ChevronLeft className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+                  </button>
+
+                  {/* Current Poster */}
+                  <div className="flex justify-center items-center max-w-full max-h-full">
+                    <img
+                      src={project.posterPaths[currentPosterIndex]}
+                      alt={`Project Poster ${currentPosterIndex + 1}`}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+
+                  {/* Right Arrow */}
+                  <button
+                    onClick={goToNextPoster}
+                    className="absolute right-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+                  >
+                    <ChevronRight className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+                  </button>
+
+                  {/* Navigation Dots */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {project.posterPaths.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToPoster(index)}
+                        className={`w-3 h-3 rounded-full transition-colors ${
+                          index === currentPosterIndex
+                            ? 'bg-blue-500 dark:bg-blue-400'
+                            : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
+                        }`}
                       />
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                </>
               ) : (
-                <div className="w-full h-full flex justify-center items-center">
+                <div className="flex justify-center items-center max-w-full max-h-full">
                   <img
                     src={project.posterPath}
                     alt="Project Poster"
