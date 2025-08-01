@@ -19,10 +19,10 @@ export default function PortfolioSection() {
     {
       id: "16",
       title: "The Pawfect Match - AI Animal Adoption",
-      description: "AI-powered system for matching shelter animals with compatible adopters through behavioral analysis, virtual simulation, and comprehensive compatibility profiling for better adoption outcomes.",
+      description: "Conceptual AI-powered system for matching shelter animals with compatible adopters. Created comprehensive Figma prototype demonstrating future behavioral analysis and virtual simulation capabilities for 5-10 year implementation timeline.",
       category: "ux",
       imageUrl: "/images/projects/pawfect-match/main.jpg",
-      tags: ["AI/ML Design", "User Research", "Behavioral Analysis"],
+      tags: ["Figma Prototyping", "Conceptual Design", "Future-Oriented UX"],
     },
     {
       id: "2",
