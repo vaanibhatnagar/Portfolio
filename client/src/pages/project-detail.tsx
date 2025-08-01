@@ -59,7 +59,8 @@ const projectsData: Record<string, ProjectDetails> = {
       "/images/projects/health-consent/community-testing.jpg"
     ],
     technologies: ["Figma", "Azure Cloud Services", "User Research", "Co-design Methods", "FAIR Consent Framework", "Child Assent Systems"],
-    link: "#"
+    link: "#",
+    posterPath: "/attached_assets/health_data_consent_poster_1754024868191.PNG"
   },
   "2": {
     id: "2",
@@ -712,7 +713,8 @@ const projectsData: Record<string, ProjectDetails> = {
       "/images/projects/dearborn-stem/college-exploration.jpg"
     ],
     technologies: ["Educational Design", "Community Partnership", "STEM Outreach", "Program Development", "Youth Mentorship", "Social Impact Design"],
-    link: "#"
+    link: "#",
+    posterPath: "/attached_assets/dsa_1_poster_1754024868188.PNG"
   },
   "20": {
     id: "20",
