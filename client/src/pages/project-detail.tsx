@@ -31,7 +31,7 @@ const projectsData: Record<string, ProjectDetails> = {
     duration: "8 months",
     team: "Microsoft NERD team, healthcare experts, community advocates",
     role: "UI/UX Designer & Co-Manager",
-    overview: "Co-managed comprehensive project to design and prototype a consent framework for health data that empowers marginalized communities, ensuring transparent and equitable access to healthcare technology.",
+    overview: "In collaboration with Microsoft New England Research and Development, my team at flok set out to design an ethical and transparent digital consent framework tailored for health data sharing. This project was part of Microsoft Research's Project Resolve, dedicated to building health equity and social justice through collaborative, community-driven innovation.\n\nflok is a nonprofit supporting a community of individuals with metabolic disorders who must closely monitor dietary intake and health data. Recognizing the research value of this sensitive information, flok aimed to ensure community members maintained clear, informed control over their personal health data before sharing it with third-party researchers.",
     problem: "Marginalized communities often lack agency in how their health data is collected and used, leading to distrust in healthcare systems and reduced participation in beneficial health programs.",
     solution: "Designed an intuitive consent framework that provides clear information about data usage, granular control over permissions, and community-centered design principles that respect cultural values and privacy concerns.",
     process: [
@@ -726,7 +726,6 @@ export default function ProjectDetail() {
           <p className="text-xl text-slate-600 dark:text-slate-300">{project.subtitle}</p>
         </div>
       </header>
-
       {/* Hero Image */}
       <div className="relative h-96 overflow-hidden">
         <img
@@ -735,13 +734,12 @@ export default function ProjectDetail() {
           className="w-full h-full object-cover"
         />
       </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Project Info */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Project Overview</h2>
-            <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">{project.overview}</p>
+            <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed font-normal">{project.overview}</p>
           </div>
           <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl">
             <h3 className="font-bold text-slate-900 dark:text-white mb-4">Project Details</h3>
