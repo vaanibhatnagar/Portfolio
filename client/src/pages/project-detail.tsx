@@ -896,6 +896,61 @@ export default function ProjectDetail() {
       case "Docker":
       case "Jenkins":
         return "bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300";
+      // Additional UX/Design Technologies (non-duplicates)
+      case "Figma":
+      case "Figma Prototyping":
+      case "Design Thinking":
+      case "Future-Oriented Design":
+      case "Conceptual Design":
+        return "bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-300";
+      // Community/Social Technologies
+      case "Community Design":
+      case "Community Partnership":
+      case "Community Platform Design":
+      case "Social Impact Design":
+      case "Co-design Methods":
+      case "Stakeholder Collaboration":
+      case "Global Collaboration":
+      case "Youth Engagement":
+      case "Youth Mentorship":
+      case "STEM Outreach":
+        return "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300";
+      // Accessibility/Health Technologies
+      case "Accessibility Design":
+      case "Assistive Technology":
+      case "Child Assent Systems":
+      case "FAIR Consent Framework":
+      case "Behavioral Design":
+        return "bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300";
+      // Additional Engineering Technologies (non-duplicates)
+      case "Aluminum Alloys":
+      case "Structural Mechanics":
+      case "Fluid Dynamics":
+      case "Thermal Analysis":
+      case "ANSYS":
+        return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
+      // Environmental/Sustainability Technologies (non-duplicates)
+      case "Sustainable Design":
+      case "Solar Panels":
+      case "Climate Justice":
+      case "Life Cycle Analysis":
+      case "Smart Home Technology":
+        return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
+      // Additional Electronics/Hardware Technologies
+      case "Servo Motors":
+      case "Sensor Networks":
+        return "bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300";
+      // Additional Design/Creative Technologies (non-duplicates)
+      case "Educational Design":
+      case "Program Development":
+        return "bg-teal-100 dark:bg-teal-900 text-teal-700 dark:text-teal-300";
+      // Additional Tools
+      case "Pytesseract":
+      case "Tkinter":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300";
+      // Additional Cloud Services
+      case "Azure Cloud Services":
+        return "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300";
       default:
         return "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300";
     }
