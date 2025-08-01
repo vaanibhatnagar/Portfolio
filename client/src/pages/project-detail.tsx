@@ -21,6 +21,7 @@ interface ProjectDetails {
   technologies: string[];
   link?: string;
   posterPath?: string;
+  posterPaths?: string[];
 }
 
 const projectsData: Record<string, ProjectDetails> = {
@@ -754,7 +755,8 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Sustainable Design", "Smart Home Technology", "AI Assistant Design", "Behavioral Design", "Life Cycle Analysis", "User Research"],
     link: "#",
-    posterPath: "/attached_assets/1_1754024963565.png"
+    posterPath: "/attached_assets/1_1754024963565.png",
+    posterPaths: ["/attached_assets/1_1754024963565.png", "/attached_assets/3_1754024969080.png"]
   }
 };
 
@@ -1022,10 +1024,10 @@ export default function ProjectDetail() {
                 </div>
               </div>
             </div>
-            {project.posterPath ? (
+            {(project.posterPath || project.posterPaths) ? (
               <Button className="w-full mt-6" onClick={() => setIsModalOpen(true)}>
                 <ExternalLink className="mr-2 h-4 w-4" />
-                View Project Poster
+                View Project Poster{project.posterPaths && project.posterPaths.length > 1 ? 's' : ''}
               </Button>
             ) : project.link && (
               <Button className="w-full mt-6" onClick={() => window.open(project.link, '_blank')}>
@@ -1147,9 +1149,9 @@ export default function ProjectDetail() {
       </div>
 
       {/* Modal Overlay for Poster */}
-      {isModalOpen && project.posterPath && (
+      {isModalOpen && (project.posterPath || project.posterPaths) && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-white dark:bg-slate-900 rounded-lg shadow-xl max-w-4xl max-h-[90vh] w-full h-full overflow-hidden">
+          <div className="relative bg-white dark:bg-slate-900 rounded-lg shadow-xl max-w-6xl max-h-[90vh] w-full h-full overflow-hidden">
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}
@@ -1158,13 +1160,29 @@ export default function ProjectDetail() {
               <X className="h-6 w-6 text-slate-600 dark:text-slate-300" />
             </button>
             
-            {/* Poster Image Display */}
-            <div className="w-full h-full p-4">
-              <img
-                src={project.posterPath}
-                alt="Project Poster"
-                className="w-full h-full object-contain"
-              />
+            {/* Poster Images Display */}
+            <div className="w-full h-full p-4 overflow-y-auto">
+              {project.posterPaths && project.posterPaths.length > 1 ? (
+                <div className="space-y-6">
+                  {project.posterPaths.map((posterPath, index) => (
+                    <div key={index} className="flex justify-center">
+                      <img
+                        src={posterPath}
+                        alt={`Project Poster ${index + 1}`}
+                        className="max-w-full h-auto object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="w-full h-full flex justify-center items-center">
+                  <img
+                    src={project.posterPath}
+                    alt="Project Poster"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
