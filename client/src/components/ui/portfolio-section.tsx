@@ -242,6 +242,29 @@ export default function PortfolioSection() {
       case "Audio Processing":
       case "Animation Systems":
         return "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300";
+      case "FAIR Consent Framework":
+      case "Co-design Methods":
+      case "Azure Cloud Services":
+        return "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300";
+      case "Figma Prototyping":
+      case "Conceptual Design":
+      case "Future-Oriented UX":
+        return "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300";
+      case "Accessibility Design":
+      case "Global Collaboration":
+        return "bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300";
+      case "Climate Justice":
+      case "Community Design":
+      case "Inclusive Spaces":
+        return "bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300";
+      case "Educational Design":
+      case "Community Partnership":
+      case "STEM Outreach":
+        return "bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300";
+      case "Sustainable Design":
+      case "Smart Home":
+      case "AI Assistant":
+        return "bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300";
       default:
         return "bg-gray-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300";
     }
