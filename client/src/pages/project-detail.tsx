@@ -53,7 +53,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Framework designed for broader community applications across digital health platforms"
     ],
     images: [
-      "/images/projects/health-consent/main.jpg",
+      "/attached_assets/health_data_consent_card_1754022297962.PNG",
       "/images/projects/health-consent/consent-flow.jpg",
       "/images/projects/health-consent/community-testing.jpg"
     ],
@@ -89,7 +89,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Created educational tool demonstrating mechanical-digital integration"
     ],
     images: [
-      "https://images.unsplash.com/photo-1493217465235-252dd9c0d632?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+      "/attached_assets/brailldle_card_1754022297961.PNG",
       "https://images.unsplash.com/photo-1581093458791-9d42e97dafbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
       "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
     ],
@@ -195,7 +195,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Contributed to successful eclipse data collection across multiple flights"
     ],
     images: [
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+      "/attached_assets/nasa_card_1754022297959.jpg",
       "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
       "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
     ],
@@ -230,7 +230,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Model adopted by 3 additional community gardens in Boston area"
     ],
     images: [
-      "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+      "/attached_assets/irrigation_card_1754022297960.PNG",
       "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
       "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
     ],
@@ -266,7 +266,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Successfully integrated theoretical control systems knowledge with practical implementation"
     ],
     images: [
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
+      "/attached_assets/rocky_card_1754022297960.PNG",
       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
       "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
     ],
@@ -588,7 +588,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Established framework for improving adoption experiences benefiting both animals and human caretakers"
     ],
     images: [
-      "/images/projects/pawfect-match/main.jpg",
+      "/attached_assets/the_pawfect_match_card_1754022297962.PNG",
       "/images/projects/pawfect-match/ai-analysis.jpg",
       "/images/projects/pawfect-match/virtual-simulation.jpg"
     ],
@@ -627,7 +627,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Demonstrated power of community-led solutions and designer role in supporting marginalized networks"
     ],
     images: [
-      "/images/projects/brailler-repair/main.jpg",
+      "/attached_assets/brailler_repair_card_1754022297962.PNG",
       "/images/projects/brailler-repair/technician-interview.jpg",
       "/images/projects/brailler-repair/accessibility-solutions.jpg"
     ],
@@ -666,7 +666,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Established foundation for future iterations including magnetic and chalk wall integrations"
     ],
     images: [
-      "/images/projects/shade/main.jpg",
+      "/attached_assets/shade_card_1754022297962.PNG",
       "/images/projects/shade/soft-walls.jpg",
       "/images/projects/shade/solid-walls.jpg"
     ],
@@ -705,7 +705,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Demonstrated power of community organizing principles in educational partnership design"
     ],
     images: [
-      "/images/projects/dearborn-stem/main.jpg",
+      "/attached_assets/community_partnership_card_1754022297961.PNG",
       "/images/projects/dearborn-stem/stem-activities.jpg",
       "/images/projects/dearborn-stem/college-exploration.jpg"
     ],
@@ -744,7 +744,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Established foundation for future iterations addressing renters and multi-unit residences"
     ],
     images: [
-      "/images/projects/smart-plugs/main.jpg",
+      "/attached_assets/sustain-a-buddy_card_1754022297960.PNG",
       "/images/projects/smart-plugs/buddy-ai.jpg",
       "/images/projects/smart-plugs/social-features.jpg"
     ],
@@ -1003,7 +1003,8 @@ export default function ProjectDetail() {
           </div>
         </div>
 
-        {/* Additional Images */}
+        {/* Additional Images - Coming Soon */}
+        {/* 
         {project.images.length > 1 && (
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Project Gallery</h2>
@@ -1020,6 +1021,14 @@ export default function ProjectDetail() {
             </div>
           </div>
         )}
+        */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Project Gallery</h2>
+          <div className="text-center py-16 bg-slate-50 dark:bg-slate-800 rounded-xl">
+            <p className="text-xl text-slate-600 dark:text-slate-400">Coming Soon</p>
+            <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">Additional project images will be added here</p>
+          </div>
+        </div>
 
         {/* Results */}
         <div className="mb-16">
