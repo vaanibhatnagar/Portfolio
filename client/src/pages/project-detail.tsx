@@ -672,6 +672,45 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Community Design", "Climate Justice", "Sustainable Materials", "Interactive Design", "Experience Design", "Youth Engagement"],
     link: "#"
+  },
+  "19": {
+    id: "19",
+    title: "Building Sustainable Community Partnerships at Dearborn STEM Academy",
+    subtitle: "Fostering educational empowerment through long-term community collaboration",
+    category: "product",
+    duration: "6 months",
+    team: "Affordable Design and Entrepreneurship class Community Development Team, DSA faculty",
+    role: "Community Partnership Designer & Educational Program Developer",
+    overview: "As part of my Affordable Design and Entrepreneurship (ADE) class, our Community Development Team collaborated closely with Dearborn STEM Academy (DSA), a community-focused school located in Boston's Roxbury neighborhood. Under the guidance of advisors Dr. Kofi Taha and Dr. Amon Milner, our goal was to foster sustainable, long-term growth through empowering educational experiences that honor DSA's mission of contributing to community health and vibrancy.",
+    problem: "DSA's mission emphasizes not only academic success but also contributions to community health and vibrancy—a unique perspective rooted in Roxbury's history of community organizing against systemic inequities. Our challenge was to support DSA in enhancing student engagement in STEM, creating inclusive spaces, and encouraging students to envision expansive opportunities for their futures while building authentic, trust-based partnerships that extend beyond short-term program interventions.",
+    solution: "We implemented four primary initiatives based on deep community engagement: In-Class STEM activities including marble roller coaster competitions and Rube Goldberg machine projects; an After-School Program focused on student-driven 3D printer repair projects; a targeted Girls in STEM Initiative creating supportive discussions for young women; and College Exploration through immersive Olin College field trips that made higher education tangible and attainable for students.",
+    process: [
+      "Engaged in active classroom involvement and mentorship to build trust with students and faculty",
+      "Conducted deep conversations with teachers and administrators to understand community needs",
+      "Identified underrepresentation of young women in STEM requiring targeted support",
+      "Designed interactive engineering activities including marble roller coaster competitions",
+      "Developed comprehensive Rube Goldberg machine project fostering creativity and teamwork",
+      "Established after-school space for student-driven projects promoting ownership and confidence",
+      "Created targeted Girls in STEM discussions with teacher partnerships",
+      "Organized immersive Olin College field trip providing practical exposure to higher education"
+    ],
+    results: [
+      "Students demonstrated increased confidence and creativity through practical STEM experiences",
+      "Teachers reported stronger student interest and participation from previously underrepresented groups",
+      "College field trip inspired students making higher education more tangible and attainable",
+      "Built sustained, trust-based relationships extending beyond immediate program activities",
+      "Empowered students through ownership-focused after-school 3D printer repair projects",
+      "Successfully targeted young women with engineering and computer science pathway discussions",
+      "Established foundation for long-term friendships, mentorships, and peer connections",
+      "Demonstrated power of community organizing principles in educational partnership design"
+    ],
+    images: [
+      "/images/projects/dearborn-stem/main.jpg",
+      "/images/projects/dearborn-stem/stem-activities.jpg",
+      "/images/projects/dearborn-stem/college-exploration.jpg"
+    ],
+    technologies: ["Educational Design", "Community Partnership", "STEM Outreach", "Program Development", "Youth Mentorship", "Social Impact Design"],
+    link: "#"
   }
 };
 

@@ -57,6 +57,14 @@ export default function PortfolioSection() {
       tags: ["Climate Justice", "Community Design", "Inclusive Spaces"],
     },
     {
+      id: "19",
+      title: "Sustainable Community Partnerships at Dearborn STEM Academy",
+      description: "Building long-term educational partnerships with Dearborn STEM Academy in Roxbury. Designed STEM engagement programs, Girls in STEM initiatives, and college exploration experiences fostering student empowerment.",
+      category: "product",
+      imageUrl: "/images/projects/dearborn-stem/main.jpg",
+      tags: ["Educational Design", "Community Partnership", "STEM Outreach"],
+    },
+    {
       id: "4",
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
