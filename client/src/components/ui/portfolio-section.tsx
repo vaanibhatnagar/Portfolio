@@ -15,7 +15,7 @@ export default function PortfolioSection() {
       title: "User-Centered Health Data Consent Framework",
       description: "Collaborated with Microsoft NERD to design ethical consent framework for flok's metabolic disorder community. Created FAIR guidelines and tiered child assent system with full data revocation capabilities.",
       category: "ux",
-      imageUrl: "/images/projects/health-consent/main.jpg",
+      imageUrl: "/attached_assets/health_data_consent_card_1754022297962.PNG",
       tags: ["FAIR Consent Framework", "Co-design Methods", "Azure Cloud Services"],
     },
     {
@@ -23,7 +23,7 @@ export default function PortfolioSection() {
       title: "The Pawfect Match - AI Animal Adoption",
       description: "Conceptual AI-powered system for matching shelter animals with compatible adopters. Created comprehensive Figma prototype demonstrating future behavioral analysis and virtual simulation capabilities for 5-10 year implementation timeline.",
       category: "ux",
-      imageUrl: "/images/projects/pawfect-match/main.jpg",
+      imageUrl: "/attached_assets/the_pawfect_match_card_1754022297962.PNG",
       tags: ["Figma Prototyping", "Conceptual Design", "Future-Oriented UX"],
     },
     {
@@ -31,7 +31,7 @@ export default function PortfolioSection() {
       title: "Brailldle - MakeMIT Winner",
       description: "Pure magic in 24 hours! Our team danced through the night, celebrating every breakthrough as we built accessible tech that makes reading possible for everyone.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/brailldle_card_1754022297961.PNG",
       tags: ["3D Design", "Arduino", "Python"],
     },
     {
@@ -47,7 +47,7 @@ export default function PortfolioSection() {
       title: "Making Brailler Repair More Accessible",
       description: "Global collaboration with Perkins School for the Blind to improve accessibility of Brailler repair processes. Designed solutions for blind technicians and international communities through research with 11 technicians worldwide.",
       category: "product",
-      imageUrl: "/images/projects/brailler-repair/main.jpg",
+      imageUrl: "/attached_assets/brailler_repair_card_1754022297962.PNG",
       tags: ["Accessibility Design", "Global Collaboration", "User Research"],
     },
     {
@@ -55,7 +55,7 @@ export default function PortfolioSection() {
       title: "SHADE - Climate Justice Community Spaces",
       description: "Designing inclusive shade structures for teenagers in Cambridge addressing heat inequities. Created flexible Soft Walls and interactive Solid Walls to foster community engagement and climate resilience.",
       category: "product",
-      imageUrl: "/images/projects/shade/main.jpg",
+      imageUrl: "/attached_assets/shade_card_1754022297962.PNG",
       tags: ["Climate Justice", "Community Design", "Inclusive Spaces"],
     },
     {
@@ -63,7 +63,7 @@ export default function PortfolioSection() {
       title: "Sustainable Community Partnerships at Dearborn STEM Academy",
       description: "Building long-term educational partnerships with Dearborn STEM Academy in Roxbury. Designed STEM engagement programs, Girls in STEM initiatives, and college exploration experiences fostering student empowerment.",
       category: "product",
-      imageUrl: "/images/projects/dearborn-stem/main.jpg",
+      imageUrl: "/attached_assets/community_partnership_card_1754022297961.PNG",
       tags: ["Educational Design", "Community Partnership", "STEM Outreach"],
     },
     {
@@ -71,7 +71,7 @@ export default function PortfolioSection() {
       title: "Sustain-a-Buddy - Sustainable Home Automation",
       description: "User-friendly smart home app with personified AI assistant 'Buddy' driving energy efficiency through simplified interactions, social competition, and actionable automation recommendations backed by Life Cycle Analysis.",
       category: "product",
-      imageUrl: "/images/projects/smart-plugs/main.jpg",
+      imageUrl: "/attached_assets/sustain-a-buddy_card_1754022297960.PNG",
       tags: ["Sustainable Design", "Smart Home", "AI Assistant"],
     },
     {
@@ -79,7 +79,7 @@ export default function PortfolioSection() {
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
       category: "product",
-      imageUrl: "https://images.unsplash.com/photo-1565493287740-9e8cfb77ebe1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/mehndi-bot_card_1754022297960.png",
       tags: ["SolidWorks", "3D Printing", "Robotics"],
     },
     {
@@ -87,7 +87,7 @@ export default function PortfolioSection() {
       title: "NASA High Altitude Balloon",
       description: "Designed robust enclosures for high-altitude balloon missions, withstanding 70,000+ ft altitudes and 120+ mph winds.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/nasa_card_1754022297959.jpg",
       tags: ["Mechanical Design", "NASA"],
     },
     {
@@ -95,7 +95,7 @@ export default function PortfolioSection() {
       title: "Solar Irrigation System",
       description: "Designed solar-powered drip irrigation system for Boston Food Forest Coalition using fluid dynamics and customizable algorithms.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/irrigation_card_1754022297960.PNG",
       tags: ["Systems Design", "Sustainability"],
     },
     {
@@ -103,7 +103,7 @@ export default function PortfolioSection() {
       title: "Rocky Robot Control System",
       description: "Designed control system for balancing an inverted pendulum on a moving cart, achieving system stabilization with detailed analysis.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/rocky_card_1754022297960.PNG",
       tags: ["Control Systems", "Dynamics"],
     },
     {
@@ -119,7 +119,7 @@ export default function PortfolioSection() {
       title: "Snowflake Database Optimization",
       description: "Built database that improved patient query speed by 100x and reduced costs by 79% using SQL, Python, and Azure Data Factory.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/snowflake_card_1754022297961.PNG",
       tags: ["SQL", "Python", "Azure"],
     },
     {
@@ -127,7 +127,7 @@ export default function PortfolioSection() {
       title: "Formula SAE Cockpit Design",
       description: "Led design of durable dashboard system with integrated LCD, E-Stop, and ergonomic optimization for racing environment.",
       category: "product",
-      imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/formula_card_1754022297958.PNG",
       tags: ["Mechanical Design", "Ergonomics"],
     },
     {
@@ -143,7 +143,7 @@ export default function PortfolioSection() {
       title: "Mao Run",
       description: "A 2D platformer game with custom physics engine and level design, featuring dynamic obstacles and engaging gameplay mechanics.",
       category: "ux",
-      imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/mao_run_card_1754022297959.png",
       tags: ["Game Development", "Python", "Physics Engine"],
     },
     {
@@ -151,7 +151,7 @@ export default function PortfolioSection() {
       title: "ACO Image Segmentation",
       description: "Implementation of Ant Colony Optimization algorithm for image segmentation, demonstrating bio-inspired computational techniques.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/aco_card_1754022297959.png",
       tags: ["Machine Learning", "Computer Vision", "Algorithms"],
     },
     {
@@ -159,7 +159,7 @@ export default function PortfolioSection() {
       title: "Dancing Stickfigures",
       description: "Interactive animation system creating dynamic stickfigure movements with procedural generation and user input controls.",
       category: "engineering",
-      imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/dancing_stickfigures_card_1754022297958.PNG",
       tags: ["Animation", "Procedural Generation", "Interactive Design"],
     },
     {
@@ -167,7 +167,7 @@ export default function PortfolioSection() {
       title: "Dancing Links Visualizer and Sudoku Solver",
       description: "Visual implementation of Knuth's Dancing Links algorithm for solving Sudoku puzzles with step-by-step algorithm visualization.",
       category: "ux",
-      imageUrl: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: "/attached_assets/dancing_links_card_1754022297958.PNG",
       tags: ["Algorithms", "Data Structures", "Visualization"],
     },
   ];
