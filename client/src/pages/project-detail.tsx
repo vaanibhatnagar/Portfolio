@@ -595,7 +595,7 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Figma Prototyping", "Conceptual Design", "User Research", "Future-Oriented Design", "Stakeholder Collaboration", "AI/ML Design Concepts"],
     link: "#",
-    posterPath: "/attached_assets/THE%20PAWFECT%20MATCH%20(1)_1754023955977.pdf"
+    posterPath: "/attached_assets/the_pawfect_match_poster_1754024296024.PNG"
   },
   "17": {
     id: "17",
@@ -1155,47 +1155,13 @@ export default function ProjectDetail() {
               <X className="h-6 w-6 text-slate-600 dark:text-slate-300" />
             </button>
             
-            {/* PDF Display */}
-            <div className="w-full h-full flex flex-col">
-              <div className="flex-1 relative">
-                <object
-                  data={project.posterPath}
-                  type="application/pdf"
-                  className="w-full h-full"
-                  title="Project Poster"
-                >
-                  <iframe
-                    src={project.posterPath}
-                    className="w-full h-full border-0"
-                    title="Project Poster"
-                  >
-                    <div className="flex items-center justify-center h-full bg-slate-100 dark:bg-slate-800">
-                      <div className="text-center p-8">
-                        <p className="text-slate-600 dark:text-slate-400 mb-4">
-                          PDF cannot be displayed in this browser
-                        </p>
-                        <Button
-                          onClick={() => window.open(project.posterPath, '_blank')}
-                        >
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Open PDF in New Tab
-                        </Button>
-                      </div>
-                    </div>
-                  </iframe>
-                </object>
-              </div>
-              {/* Alternative access */}
-              <div className="p-3 bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
-                <Button
-                  variant="outline"
-                  onClick={() => window.open(project.posterPath, '_blank')}
-                  className="w-full text-sm"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Open PDF in New Tab
-                </Button>
-              </div>
+            {/* Poster Image Display */}
+            <div className="w-full h-full p-4">
+              <img
+                src={project.posterPath}
+                alt="Project Poster"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>
