@@ -633,6 +633,45 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["User Research", "Accessibility Design", "Global Collaboration", "Design Thinking", "Community Platform Design", "Assistive Technology"],
     link: "#"
+  },
+  "18": {
+    id: "18",
+    title: "SHADE - Designing Inclusive Community Spaces for Climate Justice",
+    subtitle: "Creating climate-responsive shade structures that foster teen community engagement",
+    category: "product",
+    duration: "4 months",
+    team: "DREAM class team, Cambridge Shade is Social Justice initiative, community stakeholders",
+    role: "Experience Designer & Community Researcher",
+    overview: "In my Design Resources for Empowerment and Making (DREAM) class, our team collaborated with Cambridge's 'Shade is Social Justice' initiative, aimed at addressing heat inequities exacerbated by climate change. Recognizing that heat risk disproportionately affects certain neighborhoods, our goal was to develop shade structures that provided physical relief, promoted community interaction, and created inclusive spaces specifically designed for teenagers.",
+    problem: "Average summer temperatures in Cambridge are projected to increase significantly, exacerbating existing inequalities in heat exposure. Furthermore, teenagers often lack dedicated community spaces where they feel welcomed, resulting in feelings of exclusion or perceptions of 'loitering.' Without inclusive spaces, teenagers may seek out alternative places that potentially expose them to negative influences, while climate change continues to disproportionately impact vulnerable communities.",
+    solution: "We developed two complementary solutions: Soft Walls and Solid Walls, each addressing specific community needs and focusing on creating an inviting environment for teenagers. Soft Walls feature flexible, layered fabric with sustainable materials and vertical movement capabilities. Solid Walls include interactive mobile walls, a weatherproof Can Wall prototype from recycled materials, and textured rotational panels, all designed to promote teen engagement and community ownership.",
+    process: [
+      "Collaborated with community stakeholders including MIRROR, Building Ways, Citizens of the World, and Equity Roadmap",
+      "Researched climate inequities and heat exposure patterns affecting Cambridge neighborhoods",
+      "Identified lack of dedicated, welcoming community spaces for teenagers through community engagement",
+      "Designed flexible spatial arrangements to accommodate diverse social activities and interactions",
+      "Developed Soft Walls with tensioned side mounts and pulley systems for effortless repositioning",
+      "Created interactive Solid Walls with vertical and lateral movement capabilities for teen customization",
+      "Prototyped Can Wall using recycled materials promoting sustainability and youth ownership",
+      "Iteratively addressed practical challenges including material selection, weight management, and weatherproofing"
+    ],
+    results: [
+      "Positively received shade structures with innovative approach to youth-centric, climate-responsive community spaces",
+      "Successfully created dedicated spaces where teenagers feel welcomed and valued",
+      "Reduced likelihood of teens seeking alternative, potentially harmful environments",
+      "Developed flexible design solutions adaptable for socializing, events, and relaxation",
+      "Integrated sustainable materials including natural dyes and recycled components",
+      "Created interactive features specifically appealing to teenagers encouraging sustained use",
+      "Demonstrated practical problem-solving in material challenges and weatherproofing",
+      "Established foundation for future iterations including magnetic and chalk wall integrations"
+    ],
+    images: [
+      "/images/projects/shade/main.jpg",
+      "/images/projects/shade/soft-walls.jpg",
+      "/images/projects/shade/solid-walls.jpg"
+    ],
+    technologies: ["Community Design", "Climate Justice", "Sustainable Materials", "Interactive Design", "Experience Design", "Youth Engagement"],
+    link: "#"
   }
 };
 

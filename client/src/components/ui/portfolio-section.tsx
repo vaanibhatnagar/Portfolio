@@ -49,6 +49,14 @@ export default function PortfolioSection() {
       tags: ["Accessibility Design", "Global Collaboration", "User Research"],
     },
     {
+      id: "18",
+      title: "SHADE - Climate Justice Community Spaces",
+      description: "Designing inclusive shade structures for teenagers in Cambridge addressing heat inequities. Created flexible Soft Walls and interactive Solid Walls to foster community engagement and climate resilience.",
+      category: "product",
+      imageUrl: "/images/projects/shade/main.jpg",
+      tags: ["Climate Justice", "Community Design", "Inclusive Spaces"],
+    },
+    {
       id: "4",
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
