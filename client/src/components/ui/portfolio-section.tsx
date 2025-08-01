@@ -8,7 +8,6 @@ import type { Project } from "../../lib/types";
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("all");
   const { ref: portfolioRef, isVisible: portfolioVisible } = useScrollAnimation();
-  const { ref: gridRef, isVisible: gridVisible } = useScrollAnimation();
 
   const projects: Project[] = [
     {
@@ -278,42 +277,40 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={portfolioRef as React.RefObject<HTMLDivElement>} 
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`transition-all duration-1000 ${
             portfolioVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="text-4xl font-bold font-display gradient-text mb-4">Portfolio</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
-            A collection of projects spanning both my engineering and design expertise.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4" role="tablist" aria-label="Filter portfolio projects">
-            {filters.map((filter) => (
-              <Button
-                key={filter.id}
-                variant={activeFilter === filter.id ? "default" : "outline"}
-                onClick={() => setActiveFilter(filter.id)}
-                className={`px-6 py-2 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-800 ${
-                  activeFilter === filter.id
-                    ? "bg-primary text-white"
-                    : "text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                }`}
-                role="tab"
-                aria-selected={activeFilter === filter.id}
-                aria-controls="portfolio-grid"
-                aria-label={`Filter by ${filter.label}`}
-              >
-                {filter.label}
-              </Button>
-            ))}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold font-display gradient-text mb-4">Portfolio</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
+              A collection of projects spanning both my engineering and design expertise.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4" role="tablist" aria-label="Filter portfolio projects">
+              {filters.map((filter) => (
+                <Button
+                  key={filter.id}
+                  variant={activeFilter === filter.id ? "default" : "outline"}
+                  onClick={() => setActiveFilter(filter.id)}
+                  className={`px-6 py-2 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-50 dark:focus:ring-offset-slate-800 ${
+                    activeFilter === filter.id
+                      ? "bg-primary text-white"
+                      : "text-slate-600 dark:text-slate-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                  }`}
+                  role="tab"
+                  aria-selected={activeFilter === filter.id}
+                  aria-controls="portfolio-grid"
+                  aria-label={`Filter by ${filter.label}`}
+                >
+                  {filter.label}
+                </Button>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div 
-          ref={gridRef as React.RefObject<HTMLDivElement>} 
-          id="portfolio-grid" 
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-150 ${
-            gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          <div 
+            id="portfolio-grid" 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           role="tabpanel"
           aria-label={`${filteredProjects.length} ${activeFilter === 'all' ? 'projects' : filters.find(f => f.id === activeFilter)?.label + ' projects'}`}
         >
@@ -353,6 +350,7 @@ export default function PortfolioSection() {
               </div>
             </article>
           ))}
+          </div>
         </div>
       </div>
     </section>
