@@ -1,7 +1,12 @@
 import { ExternalLink, FileText, Users, Award } from "lucide-react";
 import { Button } from "./button";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function ResearchSection() {
+  const { ref: researchHeaderRef, isVisible: researchHeaderVisible } = useScrollAnimation();
+  const { ref: metricsRef, isVisible: metricsVisible } = useScrollAnimation();
+  const { ref: papersRef, isVisible: papersVisible } = useScrollAnimation();
+  
   const papers = [
     {
       id: "1",
@@ -78,7 +83,12 @@ export default function ResearchSection() {
   return (
     <section id="research" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={researchHeaderRef as React.RefObject<HTMLDivElement>} 
+          className={`text-center mb-16 transition-all duration-1000 ${
+            researchHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">Research Publications</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
             Contributing to the academic understanding of engineering education and the integration 
@@ -87,7 +97,12 @@ export default function ResearchSection() {
         </div>
 
         {/* Research Metrics */}
-        <div className="flex flex-wrap justify-center gap-6 mb-16">
+        <div 
+          ref={metricsRef as React.RefObject<HTMLDivElement>} 
+          className={`flex flex-wrap justify-center gap-6 mb-16 transition-all duration-1000 delay-200 ${
+            metricsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           {researchMetrics.map((metric, index) => (
             <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl text-center w-64">
               <div className={`inline-flex w-16 h-16 ${metric.bgColor} rounded-full items-center justify-center mb-4 mx-auto`}>
@@ -100,7 +115,12 @@ export default function ResearchSection() {
         </div>
 
         {/* Research Papers */}
-        <div className="space-y-8">
+        <div 
+          ref={papersRef as React.RefObject<HTMLDivElement>} 
+          className={`space-y-8 transition-all duration-1000 delay-300 ${
+            papersVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           {papers.map((paper) => (
             <div
               key={paper.id}

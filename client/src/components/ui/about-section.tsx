@@ -3,7 +3,9 @@ import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function AboutSection() {
   const { ref: aboutRef, isVisible: aboutVisible } = useScrollAnimation();
+  const { ref: storyRef, isVisible: storyVisible } = useScrollAnimation();
   const { ref: skillsRef, isVisible: skillsVisible } = useScrollAnimation();
+  const { ref: personalityRef, isVisible: personalityVisible } = useScrollAnimation();
   
   const engineeringSkills = [
     "SolidWorks & Onshape CAD",
@@ -38,9 +40,9 @@ export default function AboutSection() {
         </div>
 
         <div 
-          ref={skillsRef as React.RefObject<HTMLDivElement>} 
+          ref={storyRef as React.RefObject<HTMLDivElement>} 
           className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20 transition-all duration-1000 delay-200 ${
-            skillsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            storyVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
           <div className="space-y-6">
@@ -73,7 +75,12 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="space-y-8">
+        <div 
+          ref={skillsRef as React.RefObject<HTMLDivElement>} 
+          className={`space-y-8 transition-all duration-1000 delay-300 ${
+            skillsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h3 className="text-2xl font-bold font-display gradient-text text-center">Skills</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-xl">
@@ -108,7 +115,12 @@ export default function AboutSection() {
         </div>
 
         {/* Personality Section */}
-        <div className="mt-20">
+        <div 
+          ref={personalityRef as React.RefObject<HTMLDivElement>} 
+          className={`mt-20 transition-all duration-1000 delay-400 ${
+            personalityVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h3 className="text-2xl font-bold font-display gradient-text text-center mb-12">Beyond the Code</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gradient-to-br from-pink-50 to-red-50 dark:from-pink-900/20 dark:to-red-900/20 p-6 rounded-xl text-center border border-pink-200 dark:border-pink-800">

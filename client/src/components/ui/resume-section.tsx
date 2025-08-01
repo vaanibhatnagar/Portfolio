@@ -1,8 +1,13 @@
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Experience, Education, Skill } from "@/lib/types";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function ResumeSection() {
+  const { ref: resumeHeaderRef, isVisible: resumeHeaderVisible } = useScrollAnimation();
+  const { ref: experienceRef, isVisible: experienceVisible } = useScrollAnimation();
+  const { ref: skillsEduRef, isVisible: skillsEduVisible } = useScrollAnimation();
+  
   const experiences: Experience[] = [
     {
       id: "1",
@@ -163,7 +168,12 @@ export default function ResumeSection() {
   return (
     <section id="resume" className="py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div 
+          ref={resumeHeaderRef as React.RefObject<HTMLDivElement>} 
+          className={`text-center mb-16 transition-all duration-1000 ${
+            resumeHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h2 className="text-4xl font-bold font-display gradient-text mb-4">My Journey 🌟</h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8">
             Every role has been a new adventure, every challenge a chance to grow, and every success 
@@ -177,7 +187,12 @@ export default function ResumeSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Experience Timeline */}
-          <div>
+          <div 
+            ref={experienceRef as React.RefObject<HTMLDivElement>} 
+            className={`transition-all duration-1000 delay-200 ${
+              experienceVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+          >
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Professional Experience</h3>
             <div className="space-y-8">
               {experiences.map((experience, index) => (
@@ -197,7 +212,12 @@ export default function ResumeSection() {
           </div>
 
           {/* Skills & Education */}
-          <div className="space-y-12">
+          <div 
+            ref={skillsEduRef as React.RefObject<HTMLDivElement>} 
+            className={`space-y-12 transition-all duration-1000 delay-300 ${
+              skillsEduVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Core Skills</h3>
               <div className="grid grid-cols-2 gap-4">

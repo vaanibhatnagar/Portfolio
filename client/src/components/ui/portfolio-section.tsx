@@ -311,7 +311,7 @@ export default function PortfolioSection() {
         <div 
           ref={gridRef as React.RefObject<HTMLDivElement>} 
           id="portfolio-grid" 
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-300 ${
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 delay-150 ${
             gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           role="tabpanel"
