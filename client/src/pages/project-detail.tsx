@@ -1178,19 +1178,13 @@ export default function ProjectDetail() {
 
         {/* Navigation */}
         <div className="border-t border-slate-200 dark:border-slate-700 pt-8">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center">
             <Link href="/">
               <Button variant="outline">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Portfolio
               </Button>
             </Link>
-            <div className="text-center">
-              <p className="text-slate-500 dark:text-slate-400 mb-2">Interested in working together?</p>
-              <Button onClick={() => {
-                window.location.href = '/#contact';
-              }}>Get In Touch</Button>
-            </div>
           </div>
         </div>
       </div>
