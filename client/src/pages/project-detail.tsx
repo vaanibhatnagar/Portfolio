@@ -1197,76 +1197,66 @@ export default function ProjectDetail() {
 
       {/* Modal Overlay for Poster */}
       {isModalOpen && (project.posterPath || project.posterPaths) && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-white dark:bg-slate-900 rounded-lg shadow-xl max-w-[95vw] max-h-[95vh] overflow-hidden flex flex-col">
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="relative w-fit h-fit max-w-[98vw] max-h-[98vh] bg-white dark:bg-slate-900 rounded-lg shadow-xl overflow-hidden">
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+              className="absolute top-2 right-2 z-20 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
             >
-              <X className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+              <X className="h-5 w-5 text-slate-600 dark:text-slate-300" />
             </button>
             
             {/* Poster Images Display with Carousel */}
-            <div className="flex-1 flex items-center justify-center relative min-h-0">
+            <div className="relative">
               {project.posterPaths && project.posterPaths.length > 1 ? (
                 <>
                   {/* Left Arrow */}
                   <button
                     onClick={goToPrevPoster}
-                    className="absolute left-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white dark:bg-slate-800 bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all"
                   >
                     <ChevronLeft className="h-6 w-6 text-slate-600 dark:text-slate-300" />
                   </button>
 
                   {/* Current Poster */}
-                  <div className="w-full h-full flex justify-center items-center p-2">
-                    <img
-                      src={project.posterPaths[currentPosterIndex]}
-                      alt={`Project Poster ${currentPosterIndex + 1}`}
-                      className="max-w-full max-h-full object-contain"
-                      style={{ width: 'auto', height: 'auto' }}
-                    />
-                  </div>
+                  <img
+                    src={project.posterPaths[currentPosterIndex]}
+                    alt={`Project Poster ${currentPosterIndex + 1}`}
+                    className="block w-auto h-auto max-w-[98vw] max-h-[90vh] object-contain"
+                  />
 
                   {/* Right Arrow */}
                   <button
                     onClick={goToNextPoster}
-                    className="absolute right-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white dark:bg-slate-800 bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all"
                   >
                     <ChevronRight className="h-6 w-6 text-slate-600 dark:text-slate-300" />
                   </button>
+
+                  {/* Navigation Dots */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-black bg-opacity-40 rounded-full px-3 py-2">
+                    {project.posterPaths.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToPoster(index)}
+                        className={`w-3 h-3 rounded-full transition-colors ${
+                          index === currentPosterIndex
+                            ? 'bg-white'
+                            : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </>
               ) : (
-                <div className="w-full h-full flex justify-center items-center p-2">
-                  <img
-                    src={project.posterPath}
-                    alt="Project Poster"
-                    className="max-w-full max-h-full object-contain"
-                    style={{ width: 'auto', height: 'auto' }}
-                  />
-                </div>
+                <img
+                  src={project.posterPath}
+                  alt="Project Poster"
+                  className="block w-auto h-auto max-w-[98vw] max-h-[90vh] object-contain"
+                />
               )}
             </div>
-
-            {/* Navigation Dots - Fixed at bottom */}
-            {project.posterPaths && project.posterPaths.length > 1 && (
-              <div className="flex justify-center py-4">
-                <div className="flex space-x-2">
-                  {project.posterPaths.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToPoster(index)}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentPosterIndex
-                          ? 'bg-blue-500 dark:bg-blue-400'
-                          : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         </div>
       )}
