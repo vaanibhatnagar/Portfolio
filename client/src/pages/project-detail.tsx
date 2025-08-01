@@ -29,7 +29,7 @@ const projectsData: Record<string, ProjectDetails> = {
     subtitle: "Empowering marginalized communities with transparent health data control",
     category: "ux",
     duration: "8 months",
-    team: "Microsoft NERD team, healthcare experts, community advocates",
+    team: "Microsoft NERD team, Healthcare Experts, flok Community Advocates",
     role: "UI/UX Designer & Co-Manager",
     overview: "In collaboration with Microsoft New England Research and Development, my team at flok set out to design an ethical and transparent digital consent framework tailored for health data sharing. This project was part of Microsoft Research's Project Resolve, dedicated to building health equity and social justice through collaborative, community-driven innovation.\n\nflok is a nonprofit supporting a community of individuals with metabolic disorders who must closely monitor dietary intake and health data. Recognizing the research value of this sensitive information, flok aimed to ensure community members maintained clear, informed control over their personal health data before sharing it with third-party researchers.",
     problem: "Marginalized communities often lack agency in how their health data is collected and used, leading to distrust in healthcare systems and reduced participation in beneficial health programs.",
