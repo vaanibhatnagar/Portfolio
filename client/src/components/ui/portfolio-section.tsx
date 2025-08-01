@@ -10,11 +10,11 @@ export default function PortfolioSection() {
   const projects: Project[] = [
     {
       id: "1",
-      title: "Health Data Consent Framework",
-      description: "A passion project close to my heart - designing inclusive health data consent that truly empowers everyone. Like crafting the perfect story, every detail matters.",
+      title: "User-Centered Health Data Consent Framework",
+      description: "Collaborated with Microsoft NERD to design ethical consent framework for flok's metabolic disorder community. Created FAIR guidelines and tiered child assent system with full data revocation capabilities.",
       category: "ux",
-      imageUrl: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["UI/UX Design", "User Research"],
+      imageUrl: "/images/projects/health-consent/main.jpg",
+      tags: ["FAIR Consent Framework", "Co-design Methods", "Azure Cloud Services"],
     },
     {
       id: "2",
