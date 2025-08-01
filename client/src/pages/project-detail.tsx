@@ -1,6 +1,6 @@
 import { useParams } from "wouter";
-import { useEffect } from "react";
-import { ArrowLeft, ExternalLink, Calendar, Users, Target, Lightbulb, CheckCircle } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowLeft, ExternalLink, Calendar, Users, Target, Lightbulb, CheckCircle, X } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "wouter";
 
@@ -20,6 +20,7 @@ interface ProjectDetails {
   images: string[];
   technologies: string[];
   link?: string;
+  posterPath?: string;
 }
 
 const projectsData: Record<string, ProjectDetails> = {
@@ -593,7 +594,8 @@ const projectsData: Record<string, ProjectDetails> = {
       "/images/projects/pawfect-match/virtual-simulation.jpg"
     ],
     technologies: ["Figma Prototyping", "Conceptual Design", "User Research", "Future-Oriented Design", "Stakeholder Collaboration", "AI/ML Design Concepts"],
-    link: "#"
+    link: "#",
+    posterPath: "/attached_assets/THE PAWFECT MATCH (1)_1754023955977.pdf"
   },
   "17": {
     id: "17",
@@ -757,6 +759,7 @@ export default function ProjectDetail() {
   const params = useParams();
   const projectId = params.id;
   const project = projectId ? projectsData[projectId] : null;
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -1016,7 +1019,12 @@ export default function ProjectDetail() {
                 </div>
               </div>
             </div>
-            {project.link && (
+            {project.posterPath ? (
+              <Button className="w-full mt-6" onClick={() => setIsModalOpen(true)}>
+                <ExternalLink className="mr-2 h-4 w-4" />
+                View Project Poster
+              </Button>
+            ) : project.link && (
               <Button className="w-full mt-6" onClick={() => window.open(project.link, '_blank')}>
                 <ExternalLink className="mr-2 h-4 w-4" />
                 View Project Website
@@ -1134,6 +1142,31 @@ export default function ProjectDetail() {
           </div>
         </div>
       </div>
+
+      {/* Modal Overlay for Poster */}
+      {isModalOpen && project.posterPath && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="relative bg-white dark:bg-slate-900 rounded-lg shadow-xl max-w-4xl max-h-[90vh] w-full h-full overflow-hidden">
+            {/* Close Button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 z-10 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full p-2 shadow-lg transition-colors"
+            >
+              <X className="h-6 w-6 text-slate-600 dark:text-slate-300" />
+            </button>
+            
+            {/* PDF Embed */}
+            <div className="w-full h-full">
+              <embed
+                src={project.posterPath}
+                type="application/pdf"
+                className="w-full h-full"
+                title="Project Poster"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
