@@ -66,7 +66,7 @@ export default function PortfolioSection() {
     },
     {
       id: "20",
-      title: "Smart Plugs - Sustainable Home Automation",
+      title: "Sustain-a-Buddy - Sustainable Home Automation",
       description: "User-friendly smart home app with personified AI assistant 'Buddy' driving energy efficiency through simplified interactions, social competition, and actionable automation recommendations backed by Life Cycle Analysis.",
       category: "product",
       imageUrl: "/images/projects/smart-plugs/main.jpg",

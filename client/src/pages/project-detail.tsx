@@ -714,7 +714,7 @@ const projectsData: Record<string, ProjectDetails> = {
   },
   "20": {
     id: "20",
-    title: "Smart Plugs - Making Homes Smarter and More Sustainable",
+    title: "Sustain-a-Buddy - Making Homes Smarter and More Sustainable",
     subtitle: "User-centric smart home automation driving energy efficiency through behavioral design",
     category: "product",
     duration: "4 months",
