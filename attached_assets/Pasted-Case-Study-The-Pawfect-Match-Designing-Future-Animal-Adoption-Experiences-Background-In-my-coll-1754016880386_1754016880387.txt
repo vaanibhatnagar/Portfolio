@@ -1,0 +1,22 @@
+Case Study: The Pawfect Match - Designing Future Animal Adoption Experiences
+Background
+In my collaborative design course, my team and I tackled the challenge of improving the adoption experience for shelter animals, working closely with animal care stakeholders. Our goal was to envision and prototype a solution achievable within 5-10 years, combining user-centered methodologies and emerging technologies.
+Problem
+Animal care workers like Candice, our key stakeholder, often feel uncertain about the long-term outcomes of the animals they care for. Shelter animals face challenges in being matched with adopters who genuinely understand and prioritize their needs, leading to mismatched adoptions and continued uncertainty.
+Our Approach
+Our design process was structured into three phases:
+Explore: We conducted interviews and empathy-building exercises with animal care workers and potential adopters to deeply understand their needs and pain points.
+Conceptualize: Utilizing insights from the exploration phase, we brainstormed and iteratively refined our concept, prioritizing solutions that could leverage AI advancements to enhance both adopter and animal experiences.
+Develop: We prototyped our envisioned system, incorporating feedback from stakeholders to ensure practicality and emotional resonance.
+Design Solution
+The Pawfect Match is an AI-powered system designed to streamline the adoption process by matching animals with compatible adopters based on behavioral analysis and detailed adopter profiles.
+AI Behavioral Analysis: The system analyzes shelter animals' behaviors through video, creating detailed profiles highlighting their specific needs and traits.
+Compatibility Matching: Adopters fill out comprehensive behavioral forms detailing their lifestyle and preferences, enabling the AI to recommend optimal animal matches.
+Virtual Simulation: Through the app, users can simulate both current and future older versions of the animal in their homes, allowing them to preview how the animal might interact with its surroundings. These predictions are made possible by AI-driven behavioral analysis.
+Continued Connection: Animal care workers maintain connections with adopters post-adoption, reassuring them about the positive impacts they've facilitated.
+Impact
+Our design concept was positively received by stakeholders, who valued the combination of emotional insight and technological innovation. It addressed their core concerns, providing reassurance, clarity, and meaningful engagement in animal welfare.
+Key Learnings & Growth
+This project was a transformative experience in collaborative, user-centered design. It challenged me to balance immediate stakeholder needs with long-term technological possibilities. The iterative nature of our work emphasized the importance of empathy and flexibility in design, reinforcing my skills in co-creation, rapid prototyping, and stakeholder communication.
+Looking Forward
+Our conceptual prototype lays a solid foundation for future development. With further technological advancements and ongoing community collaboration, solutions like The Pawfect Match can significantly improve adoption experiences, positively impacting both animals and their human caretakers.

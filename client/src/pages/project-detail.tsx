@@ -557,6 +557,43 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Python", "JavaScript", "React", "Algorithm Design", "Data Structures", "Jupyter Notebook"],
     link: "https://github.com/eddydpan/dancing-links"
+  },
+  "16": {
+    id: "16",
+    title: "The Pawfect Match - AI Animal Adoption System",
+    subtitle: "Designing future animal adoption experiences through AI-powered behavioral matching",
+    category: "ux",
+    duration: "4 months",
+    team: "Collaborative design course team, animal care stakeholders",
+    role: "UX Designer & User Researcher",
+    overview: "In my collaborative design course, my team and I tackled the challenge of improving the adoption experience for shelter animals, working closely with animal care stakeholders. Our goal was to envision and prototype a solution achievable within 5-10 years, combining user-centered methodologies and emerging technologies to create meaningful connections between animals and adopters.",
+    problem: "Animal care workers like Candice, our key stakeholder, often feel uncertain about the long-term outcomes of the animals they care for. Shelter animals face challenges in being matched with adopters who genuinely understand and prioritize their needs, leading to mismatched adoptions, returns to shelters, and continued uncertainty for both animals and caregivers.",
+    solution: "The Pawfect Match is an AI-powered system designed to streamline the adoption process by matching animals with compatible adopters based on behavioral analysis and detailed adopter profiles. The system includes AI behavioral analysis through video, compatibility matching algorithms, virtual simulation capabilities, and continued post-adoption connection features.",
+    process: [
+      "Conducted interviews and empathy-building exercises with animal care workers and potential adopters",
+      "Analyzed pain points and needs through user journey mapping and stakeholder feedback",
+      "Brainstormed solutions leveraging AI advancements for enhanced adopter and animal experiences",
+      "Developed concept for AI behavioral analysis system using video input for animal profiling",
+      "Designed comprehensive behavioral forms for adopter lifestyle and preference assessment",
+      "Created virtual simulation feature allowing users to preview animals in their home environment",
+      "Prototyped continued connection system for animal care workers and adopters post-adoption",
+      "Iteratively refined concept based on stakeholder feedback emphasizing practicality and emotional resonance"
+    ],
+    results: [
+      "Positively received by stakeholders who valued combination of emotional insight and technological innovation",
+      "Successfully addressed core concerns of animal care workers regarding long-term outcomes",
+      "Created comprehensive solution balancing immediate stakeholder needs with future technological possibilities",
+      "Developed prototype foundation for future development with technological advancement potential",
+      "Demonstrated effective collaborative, user-centered design methodology for complex social challenges",
+      "Established framework for improving adoption experiences benefiting both animals and human caretakers"
+    ],
+    images: [
+      "/images/projects/pawfect-match/main.jpg",
+      "/images/projects/pawfect-match/ai-analysis.jpg",
+      "/images/projects/pawfect-match/virtual-simulation.jpg"
+    ],
+    technologies: ["AI/ML Design", "Behavioral Analysis", "User Research", "Prototyping", "Stakeholder Collaboration", "Future-Oriented Design"],
+    link: "#"
   }
 };
 

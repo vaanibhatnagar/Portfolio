@@ -17,6 +17,14 @@ export default function PortfolioSection() {
       tags: ["FAIR Consent Framework", "Co-design Methods", "Azure Cloud Services"],
     },
     {
+      id: "16",
+      title: "The Pawfect Match - AI Animal Adoption",
+      description: "AI-powered system for matching shelter animals with compatible adopters through behavioral analysis, virtual simulation, and comprehensive compatibility profiling for better adoption outcomes.",
+      category: "ux",
+      imageUrl: "/images/projects/pawfect-match/main.jpg",
+      tags: ["AI/ML Design", "User Research", "Behavioral Analysis"],
+    },
+    {
       id: "2",
       title: "Brailldle - MakeMIT Winner",
       description: "Pure magic in 24 hours! Our team danced through the night, celebrating every breakthrough as we built accessible tech that makes reading possible for everyone.",
