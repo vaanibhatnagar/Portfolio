@@ -1,6 +1,8 @@
 import { GraduationCap, Cog, Palette, Check } from "lucide-react";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
+import IMG_0826 from "@assets/IMG_0826.jpg";
+
 export default function AboutSection() {
   const { ref: aboutRef, isVisible: aboutVisible } = useScrollAnimation();
   const { ref: storyRef, isVisible: storyVisible } = useScrollAnimation();
@@ -68,7 +70,7 @@ export default function AboutSection() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src={IMG_0826}
               alt="Engineering to design transition"
               className="rounded-2xl shadow-lg w-full"
             />
