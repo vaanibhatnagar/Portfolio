@@ -25,7 +25,7 @@ interface ProjectDetails {
 const projectsData: Record<string, ProjectDetails> = {
   "1": {
     id: "1",
-    title: "Health Data Consent Framework",
+    title: "User-Centered Health Data Consent Framework",
     subtitle: "Empowering marginalized communities with transparent health data control",
     category: "ux",
     duration: "8 months",
