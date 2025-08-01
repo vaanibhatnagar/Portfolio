@@ -26,36 +26,38 @@ const projectsData: Record<string, ProjectDetails> = {
   "1": {
     id: "1",
     title: "User-Centered Health Data Consent Framework",
-    subtitle: "Empowering marginalized communities with transparent health data control",
+    subtitle: "Empowering flok community with transparent health data control through FAIR consent principles",
     category: "ux",
     duration: "8 months",
     team: "Microsoft NERD team, Healthcare Experts, flok Community Advocates",
     role: "UI/UX Designer & Co-Manager",
     overview: "In collaboration with Microsoft New England Research and Development, my team at flok set out to design an ethical and transparent digital consent framework tailored for health data sharing. This project was part of Microsoft Research's Project Resolve, dedicated to building health equity and social justice through collaborative, community-driven innovation.\n\nflok is a nonprofit supporting a community of individuals with metabolic disorders who must closely monitor dietary intake and health data. Recognizing the research value of this sensitive information, flok aimed to ensure community members maintained clear, informed control over their personal health data before sharing it with third-party researchers.",
     problem: "Marginalized communities often lack agency in how their health data is collected and used, leading to distrust in healthcare systems and reduced participation in beneficial health programs.\n\nIn today's digital landscape, consent often boils down to a quick, thoughtless click, which is insufficient for sensitive health data. flok's community, vulnerable to privacy risks due to its small size, required a dynamic, clear, and reversible consent mechanism that goes beyond mere legal compliance.",
-    solution: "Designed an intuitive consent framework that provides clear information about data usage, granular control over permissions, and community-centered design principles that respect cultural values and privacy concerns.",
+    solution: "Developed 'FAIR' (Freely given, Active, Informed, Reversible) consent guidelines specifically for digital health data, inspired by Planned Parenthood's 'FRIES' framework. Created an intuitive consent interface featuring clear delineation between required and optional data, simple explanations for data requests, and integrated child assent mechanisms through a tiered system. The consent was fully reversible, allowing community members to withdraw and request data deletion at any point.",
     process: [
-      "Conducted community outreach and interviews with 25+ participants from marginalized communities",
-      "Collaborated with healthcare privacy experts and legal advisors",
-      "Developed user personas based on community-specific needs and concerns",
-      "Created wireframes and prototypes emphasizing accessibility and cultural sensitivity",
-      "Integrated user feedback through multiple iterative design cycles",
-      "Conducted usability testing with community members",
-      "Refined design based on feedback and accessibility requirements"
+      "Analyzed consent frameworks across bodily, legal, and digital contexts to understand core principles",
+      "Developed FAIR consent guidelines tailored specifically for digital health data sharing",
+      "Conducted extensive focus groups and co-design sessions with flok community members",
+      "Researched existing consent models including Meta Consent approach by Ploug and Holm",
+      "Designed intuitive consent interface with granular control over required vs optional data",
+      "Created tiered child assent system: No Assent, Basic Assent (video), and Full Participation",
+      "Proposed robust Azure cloud backend architecture for secure data handling and consent enforcement",
+      "Iteratively refined design based on community feedback emphasizing simplicity and transparency"
     ],
     results: [
-      "95% user comprehension rate for consent processes in community testing",
-      "85% increase in willingness to participate in health programs",
-      "Framework adopted as model for ethical health data collection",
-      "Received recognition from Microsoft for community impact",
-      "Design principles integrated into broader healthcare privacy initiatives"
+      "Overwhelmingly positive feedback from flok community on simplicity and transparency",
+      "Successfully created FAIR consent framework addressing digital health data unique requirements",
+      "Delivered comprehensive design specifications and backend technical requirements",
+      "Enabled seamless integration into flok app with full consent revocation capabilities",
+      "Microsoft Research publishing methodology and findings as part of Project Resolve",
+      "Framework designed for broader community applications across digital health platforms"
     ],
     images: [
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-      "https://images.unsplash.com/photo-1582719471348-981934b4d342?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-      "https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800"
+      "/images/projects/health-consent/main.jpg",
+      "/images/projects/health-consent/consent-flow.jpg",
+      "/images/projects/health-consent/community-testing.jpg"
     ],
-    technologies: ["Figma", "Adobe XD", "User Research", "Accessibility Testing", "Community Design"],
+    technologies: ["Figma", "Azure Cloud Services", "User Research", "Co-design Methods", "FAIR Consent Framework", "Child Assent Systems"],
     link: "#"
   },
   "2": {
