@@ -1026,7 +1026,7 @@ export default function ProjectDetail() {
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8">Project Gallery</h2>
           <div className="text-center py-16 bg-slate-50 dark:bg-slate-800 rounded-xl">
             <p className="text-xl text-slate-600 dark:text-slate-400">Coming Soon</p>
-            <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">Additional project images will be added here</p>
+            <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">(image is still finding its best angle)</p>
           </div>
         </div>
 
