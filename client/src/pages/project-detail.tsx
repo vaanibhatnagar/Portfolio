@@ -594,6 +594,45 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Figma Prototyping", "Conceptual Design", "User Research", "Future-Oriented Design", "Stakeholder Collaboration", "AI/ML Design Concepts"],
     link: "#"
+  },
+  "17": {
+    id: "17",
+    title: "Making Brailler Repair More Accessible",
+    subtitle: "Global collaboration to improve accessibility of assistive technology maintenance",
+    category: "product",
+    duration: "4 months",
+    team: "Technology, Accessibility, and Design class team, Perkins School for the Blind",
+    role: "Product Designer & User Researcher",
+    overview: "As part of my Technology, Accessibility, and Design (TAD) class at Olin College, our team collaborated with the Perkins School for the Blind to make the process of cleaning and repairing Braillers more accessible. Braillers—mechanical devices used by people who are blind to write in Braille—require periodic maintenance, which is often handled by a small, dedicated network of repair technicians. Our work focused on making Brailler repair processes more accessible for blind technicians and improving global distribution of tools, parts, and knowledge.",
+    problem: "The current Brailler repair ecosystem is built on informal networks of technicians, with inconsistent access to information, tools, and replacement parts. Blind technicians face a lack of accessible training resources and tailored support. International technicians often struggle to get parts due to shipping delays, credit card restrictions, or limited funding. This results in many Braillers sitting unusable for months or even years, limiting independence for users worldwide.",
+    solution: "We proposed a comprehensive set of recommendations to Perkins aimed at increasing accessibility, connection, and sustainability within the Brailler repair community. Our solution included a digital accessible repair manual, community forum platform, updated technician directory, and improved international parts access to address the systemic barriers preventing effective maintenance of these critical assistive devices.",
+    process: [
+      "Conducted interviews with 11 technicians across the U.S., Canada, Australia, and Kenya",
+      "Analyzed knowledge gaps and decentralization in the current repair ecosystem",
+      "Identified accessibility barriers faced by blind technicians in repair processes",
+      "Researched supply chain disparities affecting international technician communities",
+      "Documented innovation in isolation where technicians develop custom tools and techniques",
+      "Synthesized research findings to understand global patterns and local adaptations",
+      "Designed accessible solutions addressing training, communication, and resource access",
+      "Developed recommendations for sustainable community-driven support systems"
+    ],
+    results: [
+      "Uncovered resilience and challenges of the global Brailler repair community through comprehensive research",
+      "Identified pathways to amplify existing ingenuity while connecting isolated technicians",
+      "Highlighted community-driven adaptations like tactile tools and kerosene cleaning alternatives",
+      "Proposed digital, modular repair manual with screenreader accessibility and CAD animations",
+      "Designed community forum platform modeled after Discourse for knowledge sharing",
+      "Recommended dynamic technician directory for improved user access and communication",
+      "Addressed international parts access through foreign credit card acceptance and bulk purchasing strategies",
+      "Demonstrated power of community-led solutions and designer role in supporting marginalized networks"
+    ],
+    images: [
+      "/images/projects/brailler-repair/main.jpg",
+      "/images/projects/brailler-repair/technician-interview.jpg",
+      "/images/projects/brailler-repair/accessibility-solutions.jpg"
+    ],
+    technologies: ["User Research", "Accessibility Design", "Global Collaboration", "Design Thinking", "Community Platform Design", "Assistive Technology"],
+    link: "#"
   }
 };
 

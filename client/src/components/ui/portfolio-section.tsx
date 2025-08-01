@@ -41,6 +41,14 @@ export default function PortfolioSection() {
       tags: ["Data Pipeline", "AWS", "Java"],
     },
     {
+      id: "17",
+      title: "Making Brailler Repair More Accessible",
+      description: "Global collaboration with Perkins School for the Blind to improve accessibility of Brailler repair processes. Designed solutions for blind technicians and international communities through research with 11 technicians worldwide.",
+      category: "product",
+      imageUrl: "/images/projects/brailler-repair/main.jpg",
+      tags: ["Accessibility Design", "Global Collaboration", "User Research"],
+    },
+    {
       id: "4",
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
