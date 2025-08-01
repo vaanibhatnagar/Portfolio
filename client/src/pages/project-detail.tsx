@@ -711,6 +711,45 @@ const projectsData: Record<string, ProjectDetails> = {
     ],
     technologies: ["Educational Design", "Community Partnership", "STEM Outreach", "Program Development", "Youth Mentorship", "Social Impact Design"],
     link: "#"
+  },
+  "20": {
+    id: "20",
+    title: "Smart Plugs - Making Homes Smarter and More Sustainable",
+    subtitle: "User-centric smart home automation driving energy efficiency through behavioral design",
+    category: "product",
+    duration: "4 months",
+    team: "Sustainable design course team, homeowner research participants",
+    role: "Product Designer & UX Researcher",
+    overview: "For my sustainable design course, my team explored how smart home technology—specifically smart plugs—could drive significant improvements in household energy efficiency. Our objective was to leverage existing technologies to facilitate sustainable behavioral changes, making it easier and more intuitive for homeowners to manage their energy consumption through user-centered design and social engagement strategies.",
+    problem: "Homeowners often struggle to interpret complex energy data, making it difficult for them to adopt energy-saving behaviors consistently. Many existing smart home solutions are overwhelming, providing detailed information without clear guidance or engaging ways to encourage sustained behavior change. The disconnect between data availability and actionable insights prevents meaningful adoption of energy-efficient practices.",
+    solution: "We developed 'Smart Plugs,' an innovative, user-friendly home automation app featuring a personified AI assistant named 'Buddy.' The solution includes simplified user interactions, social competition features, automated recommendations, and flexible data access—allowing users to engage at their preferred level of complexity while driving meaningful energy savings through behavioral design principles.",
+    process: [
+      "Conducted interviews with multiple homeowners using smart electronic devices and energy monitors",
+      "Analyzed user preferences revealing desire for convenience and control without complexity",
+      "Identified social influence and friendly competition as effective behavior change motivators",
+      "Designed personified AI assistant 'Buddy' for simplified, personalized interactions",
+      "Developed dual-layer interface allowing both simple and detailed data access",
+      "Created social engagement features with energy consumption scoring and friend comparisons",
+      "Implemented automated recommendation system for easy-to-adopt energy-saving actions",
+      "Conducted Life Cycle Analysis (LCA) validating approach over 10-year impact timeline"
+    ],
+    results: [
+      "Demonstrated substantial energy efficiency improvements with up to 10x factor through whole house optimization",
+      "Achieved moderate improvements through single device optimization showing design scalability",
+      "Validated significant energy savings potential with clear environmental benefits through LCA",
+      "Created user-friendly interface reducing cognitive load while maintaining detailed data access",
+      "Developed social competition features effectively motivating sustained behavior change",
+      "Designed actionable automation recommendations requiring minimal active user thought",
+      "Enhanced understanding of user-centric sustainable solution design integrated into daily life",
+      "Established foundation for future iterations addressing renters and multi-unit residences"
+    ],
+    images: [
+      "/images/projects/smart-plugs/main.jpg",
+      "/images/projects/smart-plugs/buddy-ai.jpg",
+      "/images/projects/smart-plugs/social-features.jpg"
+    ],
+    technologies: ["Sustainable Design", "Smart Home Technology", "AI Assistant Design", "Behavioral Design", "Life Cycle Analysis", "User Research"],
+    link: "#"
   }
 };
 

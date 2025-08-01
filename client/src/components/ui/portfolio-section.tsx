@@ -65,6 +65,14 @@ export default function PortfolioSection() {
       tags: ["Educational Design", "Community Partnership", "STEM Outreach"],
     },
     {
+      id: "20",
+      title: "Smart Plugs - Sustainable Home Automation",
+      description: "User-friendly smart home app with personified AI assistant 'Buddy' driving energy efficiency through simplified interactions, social competition, and actionable automation recommendations backed by Life Cycle Analysis.",
+      category: "product",
+      imageUrl: "/images/projects/smart-plugs/main.jpg",
+      tags: ["Sustainable Design", "Smart Home", "AI Assistant"],
+    },
+    {
       id: "4",
       title: "Mehndi Bot",
       description: "A henna application robot with XY gantry system for accurate application. Integrated mechanical, software, and electrical components.",
