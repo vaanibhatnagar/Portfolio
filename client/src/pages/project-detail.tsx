@@ -1187,9 +1187,9 @@ export default function ProjectDetail() {
             </Link>
             <div className="text-center">
               <p className="text-slate-500 dark:text-slate-400 mb-2">Interested in working together?</p>
-              <Link href="/#contact">
-                <Button>Get In Touch</Button>
-              </Link>
+              <Button onClick={() => {
+                window.location.href = '/#contact';
+              }}>Get In Touch</Button>
             </div>
           </div>
         </div>
