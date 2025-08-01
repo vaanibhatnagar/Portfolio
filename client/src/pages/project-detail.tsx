@@ -40,7 +40,7 @@ const projectsData: Record<string, ProjectDetails> = {
       "Conducted extensive focus groups and co-design sessions with flok community members",
       "Researched existing consent models including Meta Consent approach by Ploug and Holm",
       "Designed intuitive consent interface with granular control over required vs optional data",
-      "Created tiered child assent system: No Assent, Basic Assent (video), and Full Participation",
+      "Created tiered child assent system: No Assent, Basic Assent (shows a video explaining data consent in simple terms), and Full Participation",
       "Proposed robust Azure cloud backend architecture for secure data handling and consent enforcement",
       "Iteratively refined design based on community feedback emphasizing simplicity and transparency"
     ],
