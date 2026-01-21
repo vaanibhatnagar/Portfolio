@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ExternalLink, Calendar, Users, Target, Lightbulb, CheckCircle, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "wouter";
+import { getAssetPath } from "../lib/assets";
 
 interface ProjectDetails {
   id: string;
@@ -1034,7 +1035,7 @@ export default function ProjectDetail() {
       {/* Hero Image */}
       <div className="relative h-96 overflow-hidden">
         <img
-          src={project.images[0]}
+          src={getAssetPath(project.images[0])}
           alt={project.title}
           className="w-full h-full object-cover"
         />
@@ -1127,7 +1128,7 @@ export default function ProjectDetail() {
               {project.images.slice(1).map((image, index) => (
                 <div key={index} className="relative h-64 rounded-xl overflow-hidden">
                   <img
-                    src={image}
+                    src={getAssetPath(image)}
                     alt={`${project.title} - Image ${index + 2}`}
                     className="w-full h-full object-cover"
                   />
@@ -1215,7 +1216,7 @@ export default function ProjectDetail() {
 
                   {/* Current Poster */}
                   <img
-                    src={project.posterPaths[currentPosterIndex]}
+                    src={getAssetPath(project.posterPaths[currentPosterIndex])}
                     alt={`Project Poster ${currentPosterIndex + 1}`}
                     className="block w-auto h-auto max-w-[98vw] max-h-[90vh] object-contain"
                   />
@@ -1245,7 +1246,7 @@ export default function ProjectDetail() {
                 </>
               ) : (
                 <img
-                  src={project.posterPath}
+                  src={getAssetPath(project.posterPath!)}
                   alt="Project Poster"
                   className="block w-auto h-auto max-w-[98vw] max-h-[90vh] object-contain"
                 />

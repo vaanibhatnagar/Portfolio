@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "./button";
 import { Link } from "wouter";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import { getAssetPath } from "../../lib/assets";
 import type { Project } from "../../lib/types";
 
 export default function PortfolioSection() {
@@ -320,7 +321,7 @@ export default function PortfolioSection() {
               className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 focus-within:shadow-xl focus-within:-translate-y-2"
             >
               <img
-                src={project.imageUrl}
+                src={getAssetPath(project.imageUrl)}
                 alt={`Project image for ${project.title}`}
                 className="w-full h-48 object-cover"
               />
