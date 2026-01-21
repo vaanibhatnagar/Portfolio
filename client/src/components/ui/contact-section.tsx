@@ -6,9 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-import type { InsertContact } from "@shared/schema";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function ContactSection() {
@@ -23,37 +20,8 @@ export default function ContactSection() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const queryClient = useQueryClient();
-
-  const contactMutation = useMutation({
-    mutationFn: async (data: InsertContact) => {
-      const response = await apiRequest("POST", "/api/contacts", data);
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      queryClient.invalidateQueries({ queryKey: ["/api/contacts"] });
-    },
-    onError: (error: Error) => {
-      toast({
-        title: "Error sending message",
-        description: "Please try again later or contact me directly via email.",
-        variant: "destructive",
-      });
-      console.error("Contact form error:", error);
-    },
-  });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -84,12 +52,18 @@ export default function ContactSection() {
       return;
     }
 
+    setIsSubmitting(true);
+    
     // Create mailto link for sending message
     const mailtoLink = `mailto:vaanibhatnagar016@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     window.location.href = mailtoLink;
     
-    // Also store the form data
-    contactMutation.mutate(formData);
+    toast({
+      title: "Opening email client",
+      description: "Your default email app will open with your message.",
+    });
+    
+    setTimeout(() => setIsSubmitting(false), 1000);
   };
 
   const contactInfo = [
@@ -237,10 +211,10 @@ export default function ContactSection() {
               </div>
               <Button
                 type="submit"
-                disabled={contactMutation.isPending}
+                disabled={isSubmitting}
                 className="w-full px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
               >
-                {contactMutation.isPending ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Opening..." : "Send Message"}
                 <Send className="ml-2 h-4 w-4" />
               </Button>
             </form>
