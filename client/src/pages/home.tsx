@@ -2,6 +2,7 @@ import Navigation from "../components/ui/navigation";
 import HeroSection from "../components/ui/hero-section";
 import AboutSection from "../components/ui/about-section";
 import PortfolioSection from "../components/ui/portfolio-section";
+import SkillsSection from "../components/ui/skills-section";
 import ResearchSection from "../components/ui/research-section";
 import ResumeSection from "../components/ui/resume-section";
 import ContactSection from "../components/ui/contact-section";
@@ -15,6 +16,7 @@ export default function Home() {
       <main id="main-content" className="focus:outline-none" tabIndex={-1}>
         <AboutSection />
         <PortfolioSection />
+        <SkillsSection />
         <ResearchSection />
         <ResumeSection />
         <ContactSection />
