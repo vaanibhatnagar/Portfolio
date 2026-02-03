@@ -12,6 +12,14 @@ export default function ResumeSection() {
   const experiences: Experience[] = [
     {
       id: "1",
+      title: "Product Designer",
+      company: "Optum",
+      period: "July 2025 - Present",
+      description: "Collaborate with healthcare stakeholders to translate complex medical requirements into clear, actionable design solutions. Develop prototypes and design systems for healthcare applications, creating intuitive workflows for Electronic Medical Records and clinical tools.",
+      type: "design",
+    },
+    {
+      id: "2",
       title: "UI/UX Designer",
       company: "Microsoft NERD (Senior Capstone)",
       period: "September 2024 - May 2025",
@@ -19,7 +27,7 @@ export default function ResumeSection() {
       type: "design",
     },
     {
-      id: "2", 
+      id: "3", 
       title: "Operations Intern",
       company: "Accelerate Wind",
       period: "September 2024 - December 2024",
@@ -27,7 +35,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "3",
+      id: "4",
       title: "Software Engineering Intern",
       company: "Optum",
       period: "June 2024 - August 2024",
@@ -35,7 +43,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "4",
+      id: "5",
       title: "Mechanical Design Engineer", 
       company: "NASA Nationwide Eclipse Ballooning Project",
       period: "December 2023 - May 2024",
@@ -43,7 +51,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "5",
+      id: "6",
       title: "Cockpit Engineer",
       company: "Olin Electric Motorsports (Formula SAE)",
       period: "December 2023 - October 2024", 
@@ -51,7 +59,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "6",
+      id: "7",
       title: "Systems Lead Engineer",
       company: "Public Interest Technology & Boston Food Forest Coalition",
       period: "September 2023 - May 2024",
@@ -59,7 +67,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "7",
+      id: "8",
       title: "Data Science Intern",
       company: "Optum",
       period: "June 2023 - August 2023",
@@ -67,7 +75,7 @@ export default function ResumeSection() {
       type: "engineering",
     },
     {
-      id: "8",
+      id: "9",
       title: "Product Design Intern",
       company: "Optum", 
       period: "June 2022 - August 2022",
@@ -75,7 +83,7 @@ export default function ResumeSection() {
       type: "transition",
     },
     {
-      id: "9",
+      id: "10",
       title: "IT Help Desk Technician",
       company: "Olin IT Department",
       period: "September 2021 - May 2025",
