@@ -2,6 +2,7 @@ import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Experience, Education, Skill } from "@/lib/types";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import { getAssetPath } from "@/lib/assets";
 
 export default function ResumeSection() {
   const { ref: resumeHeaderRef, isVisible: resumeHeaderVisible } = useScrollAnimation();
@@ -179,10 +180,14 @@ export default function ResumeSection() {
             Every role has been a new adventure, every challenge a chance to grow, and every success 
             a moment worth celebrating with the amazing teams who made it possible.
           </p>
-          <Button className="inline-flex items-center px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
+          <a 
+            href={getAssetPath("/attached_assets/Vaani_Bhatnagar_Resume_1770153456143.pdf")}
+            download="Vaani_Bhatnagar_Resume.pdf"
+            className="inline-flex items-center px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
+          >
             <Download className="mr-2 h-4 w-4" />
             Download Resume PDF
-          </Button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
