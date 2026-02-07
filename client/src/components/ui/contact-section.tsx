@@ -90,7 +90,7 @@ export default function ContactSection() {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/vaani-bhatnagar-3b90b3182/",
+      href: "https://www.linkedin.com/in/vaani-bhatnagar-3b90b3182/",
       bgColor: "bg-blue-600 hover:bg-blue-700",
     },
     {
