@@ -97,7 +97,7 @@ export default function ResumeSection() {
       id: "1",
       degree: "Bachelor's of Science in Mechanical Engineering",
       institution: "Olin College of Engineering",
-      period: "Expected May 2025 | GPA: 3.83/4.0",
+      period: "May 2025 | GPA: 3.8/4.0",
     },
   ];
 
